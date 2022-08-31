@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: GDIConstruction
+  m_EditorClassIdentifier: 
+  m_GroupName: GDIConstruction
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 167ec0e9a7c815241b87eec03f7f6608
+  m_SerializeEntries:
+  - m_GUID: c022ffb9046dc3d4fa8142dd9a483362
+    m_Address: GDIConstructionYard
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Building
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f41a45d5483e9c048be6392b3f202a7b
+    m_Address: AdvancedComCenter
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Building
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f9af37d8d9eb8684ab52df9754bd5e80
+    m_Address: GDIHelicopterPad
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Building
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 773a2d9848d1bdb4e937c619db4ab7f7
+    m_Address: GDIRefinery
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Building
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6a5768824b390264389faacd7b28cbcb
+    m_Address: GDIRepairBay
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Building
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4886eda5bd3d2d3439bfcbb948f2526b
+    m_Address: TankFactory
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Building
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ceae9bab8b9a5914f83406a83ebd45ef
+    m_Address: GuardTower
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Tower
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 97db5c12ecba53a4f8cf146d8dd30f4c
+    m_Address: AdvancedGuardTower
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Tower
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: deb9c3d02693e4343a1e2a124cf4acbf
+    m_Address: GDIPowerPlant
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Building
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 99c100233f52516448c988a1238fa6b9, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 81ac52ccfcc7048468f1dc0c6db33188, type: 2}
+    - {fileID: 11400000, guid: 0dd48286797602542868166016f5dcaa, type: 2}

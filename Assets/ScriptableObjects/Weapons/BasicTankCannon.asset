@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837079aa1d6b22b43bd844d8efd4bf4a, type: 3}
+  m_Name: BasicTankCannon
+  m_EditorClassIdentifier: 
+  _attackDistance: 30
+  _reloadDuration: 2
+  _isAntiAircraft: 0
+  _projectile: {fileID: 11400000, guid: ff327d2ec9820304ea78082c5373dbd6, type: 2}
+  _projectileRequestChannel: {fileID: 11400000, guid: f3dfafbb134089d48a236f0d1ab7cfc6,
+    type: 2}

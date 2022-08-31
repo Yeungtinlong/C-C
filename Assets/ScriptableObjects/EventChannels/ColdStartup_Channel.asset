@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e864c27bc39b314d8d55eb20c128b5a, type: 3}
+  m_Name: ColdStartup_Channel
+  m_EditorClassIdentifier: 
+  description: "\u5F53\u5728Editor\u70B9\u51FBPlay\u6309\u94AE\u8FD0\u884C\u65F6\uFF0C\u901A\u77E5SceneLoader"

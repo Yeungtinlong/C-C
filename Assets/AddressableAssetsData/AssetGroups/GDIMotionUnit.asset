@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: GDIMotionUnit
+  m_EditorClassIdentifier: 
+  m_GroupName: GDIMotionUnit
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 14f78292fd45f044aa24dbc7a73e514f
+  m_SerializeEntries:
+  - m_GUID: b2297e3917786434fac47f0b1b58a81e
+    m_Address: GDIA10
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 5401037494733989315, guid: b2297e3917786434fac47f0b1b58a81e,
+      type: 3}
+    m_TargetAsset: {fileID: 5401037494733989315, guid: b2297e3917786434fac47f0b1b58a81e,
+      type: 3}
+  - m_GUID: 9ae3ec1c1aad0114db71135fd6b57b62
+    m_Address: MammothTank
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: acfedc4f71a7d824bbef8eea979d0abe
+    m_Address: MiddleTank
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c3a6408e52503bd4fa5d314a9f5c4dc0
+    m_Address: OrcaAircraft
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 7d1f4755e3fbc6748873ac6c41e5aa68
+    m_Address: RocketLauncher
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 99c100233f52516448c988a1238fa6b9, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4518eaaaea875da40b667672b386a8ab, type: 2}
+    - {fileID: 11400000, guid: 005bc5ce079aad14eb5cf1bfa1e24fac, type: 2}

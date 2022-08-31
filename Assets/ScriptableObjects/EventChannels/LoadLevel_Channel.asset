@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e864c27bc39b314d8d55eb20c128b5a, type: 3}
+  m_Name: LoadLevel_Channel
+  m_EditorClassIdentifier: 
+  description: "\u4E8E\u66F4\u6362\u573A\u666F\u65F6\u53D1\u8D77\uFF0C\u901A\u5E38\u5728\u4ECE\u83DC\u5355\u8FDB\u5165\u5173\u5361\u65F6\u53D1\u8D77\u3002"

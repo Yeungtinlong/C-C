@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467eb4e0d471686438418d201e709ff1, type: 3}
+  m_Name: GD2BulletSO
+  m_EditorClassIdentifier: 
+  _projectileType: 3
+  _attackConfig: {fileID: 11400000, guid: 4b918cb771807134e91facc29035e316, type: 2}
+  _maxSpeed: 120
+  _timeToFullSpeed: 0
+  _projectilePrefab: {fileID: -4001936685091686111, guid: 762e6ff8c07dc114181cfabb790c5258,
+    type: 3}
+  _canHitOnWay: 0

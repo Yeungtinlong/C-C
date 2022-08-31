@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a51f184927e8a7c4982d113d28a040d0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _healthConfigSO: {instanceID: 0}
+  - _passagerMaxCountSO: {fileID: 11400000, guid: cf75444e1ae4cd64d9eb1115d872e090,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

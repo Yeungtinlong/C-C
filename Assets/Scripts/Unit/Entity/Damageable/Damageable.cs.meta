@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6bbdc2b107035b148aec675d78a06419
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _healthConfigSO: {instanceID: 0}
+  - _damageableUICanvas: {instanceID: 0}
+  - _countUnitChannel: {fileID: 11400000, guid: 45adcf7d3dcb8724894fc2584de516f5,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: e76ca8245c366684ba0ff4bb2dbee78c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _fadeChannelSO: {fileID: 11400000, guid: 91e5726995d306844bd084c1f27ae098, type: 2}
+  - _imageComponent: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

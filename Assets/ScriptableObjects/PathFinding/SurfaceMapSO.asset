@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85630cb0bb9873e4ca993689937ac295, type: 3}
+  m_Name: SurfaceMapSO
+  m_EditorClassIdentifier: 
+  _blockMapSO: {fileID: 11400000, guid: 58ed0368e5e37924badd6bc1b9f57283, type: 2}
