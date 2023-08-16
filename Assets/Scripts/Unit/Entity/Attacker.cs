@@ -80,7 +80,7 @@ public class Attacker : MonoBehaviour
 
             IsWeaponReadyGroup[i] = false;
 
-            //TODO: 防空
+            //TODO: 闃茬┖
         }
     }
 
@@ -119,7 +119,7 @@ public class Attacker : MonoBehaviour
     }
 
     /// <summary>
-    /// 提供一个方法让状态机判断敌人是否在战斗范围内
+    /// 鎻愪緵涓�涓柟娉曡鐘舵�佹満鍒ゆ柇鏁屼汉鏄惁鍦ㄦ垬鏂楄寖鍥村唴
     /// </summary>
     /// <returns></returns>
     public bool IsTargetInRange()

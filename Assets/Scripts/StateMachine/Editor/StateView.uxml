@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/StateMachine/Editor/StateView.uss?fileID=7433441132597879392&amp;guid=12ad79afa7f1cd54e8b46de3a52fb8a6&amp;type=3#StateView" />
+    <ui:VisualElement name="selection-border" />
+    <ui:VisualElement name="node-border">
+        <ui:VisualElement name="contents">
+            <ui:VisualElement name="top">
+                <ui:VisualElement name="input" />
+                <ui:Label name="state-name" class="unity-text-element unity-label" style="visibility: hidden; overflow: hidden; display: none;" />
+                <ui:TextField picking-mode="Ignore" value="filler text" text="filler text" name="state-name-input" />
+                <ui:VisualElement name="divider" class="vertical" />
+                <ui:Foldout name="action-list" />
+                <ui:VisualElement name="output" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

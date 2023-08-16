@@ -1,14 +1,20 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace CNC.StateMachine.ScriptableObjects
 {
     [CreateAssetMenu(fileName = "New TransitionTable", menuName = "State Machine/Transition Table")]
     public class TransitionTableSO : ScriptableObject
     {
-        [SerializeField] private TransitionItem[] _transitions = default;
+        [SerializeField] private List<TransitionItem> _transitions = new List<TransitionItem>();
+        public List<TransitionItem> Transitions => _transitions;
+
+        [SerializeField] private List<StateSO> _states;
+        public List<StateSO> States => _states;
 
         internal State GetInitialState(StateMachine stateMachine)
         {
@@ -72,24 +78,52 @@ namespace CNC.StateMachine.ScriptableObjects
             resultGroups = resultGroupsList.ToArray();
         }
 
-        [Serializable]
-        public struct TransitionItem
+#if UNITY_EDITOR
+        public StateSO CreateState(Type type)
         {
-            public StateSO FromState;
-            public StateSO ToState;
-            public ConditionUsage[] Conditions;
+            StateSO state = ScriptableObject.CreateInstance(type) as StateSO;
+            _states.Add(state);
+            AssetDatabase.AddObjectToAsset(state, this);
+            AssetDatabase.SaveAssets();
+            return state;
         }
 
-        [Serializable]
-        public struct ConditionUsage
+        public void RemoveState(StateSO state)
         {
-            public Result ExpectedResult;
-            public StateConditionSO StateCondition;
-            public Operator Operator;
+            _states.Remove(state);
+            AssetDatabase.RemoveObjectFromAsset(state);
+            AssetDatabase.SaveAssets();
         }
 
-        public enum Result { True, False }
-        public enum Operator { And, Or }
+        public TransitionItem CreateTransition(StateSO from, StateSO to)
+        {
+            if (_transitions.Exists(item => item.FromState == from && item.ToState == to))
+                return null;
+
+            TransitionItem transitionItem = CreateInstance<TransitionItem>();
+            transitionItem.FromState = from;
+            transitionItem.ToState = to;
+            transitionItem.guid = GUID.Generate().ToString();
+            _transitions.Add(transitionItem);
+
+            AssetDatabase.AddObjectToAsset(transitionItem, this);
+            AssetDatabase.SaveAssets();
+
+            return transitionItem;
+        }
+
+        public void RemoveTransition(TransitionItem transitionItem)
+        {
+            _transitions.Remove(transitionItem);
+
+            AssetDatabase.RemoveObjectFromAsset(transitionItem);
+            AssetDatabase.SaveAssets();
+        }
+#endif
+
+
+        // [Serializable]
+
     }
 }
 

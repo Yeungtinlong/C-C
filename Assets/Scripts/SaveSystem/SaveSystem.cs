@@ -1,16 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Danny.TechnologyTree;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "SaveSystem", menuName = "System/SaveSystem")]
-public class SaveSystem : ScriptableObject
+namespace Danny.SaveSystem
 {
-    public void WriteEmptySaveFile()
+    [CreateAssetMenu(fileName = "SaveSystem", menuName = "System/SaveSystem")]
+    public class SaveSystem : ScriptableObject
     {
-    }
-
-    public void SetNewGameData()
-    {
-
+        private readonly Save _save = new Save();
     }
 }

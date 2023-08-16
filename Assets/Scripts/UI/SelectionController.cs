@@ -76,7 +76,7 @@ public class SelectionController : MonoBehaviour
         if (_isDrawing)
         {
             DrawSelectionRect(_rect);
-            DrawSelectionRectBorder(_rect, 1f);
+            DrawSelectionRectBorder(_rect, 2f);
         }
     }
 }

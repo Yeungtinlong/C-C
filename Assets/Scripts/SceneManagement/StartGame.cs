@@ -1,10 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Danny.SaveSystem;
 using UnityEngine;
 
 /// <summary>
-/// 这个类包含了开始游戏按钮按下时要调用的方法
+/// 锟斤拷锟斤拷锟斤拷锟斤拷锟剿匡拷始锟斤拷戏锟斤拷钮锟斤拷锟斤拷时要锟斤拷锟矫的凤拷锟斤拷
 /// </summary>
 public class StartGame : MonoBehaviour
 {
@@ -38,9 +36,9 @@ public class StartGame : MonoBehaviour
     {
         //_hasSaveData = false;
 
-        _saveSystem.WriteEmptySaveFile();
-        _saveSystem.SetNewGameData();
+        // _saveSystem.WriteEmptySaveFile();
+        // _saveSystem.SetNewGameData();
 
-        _startGameEvent.RaiseEvent(_levelsToLoad, _isShowLoadScreen); // 开始游戏
+        _startGameEvent.RaiseEvent(_levelsToLoad, _isShowLoadScreen); // 锟斤拷始锟斤拷戏
     }
 }

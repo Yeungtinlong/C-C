@@ -7,12 +7,16 @@ public class Damageable : MonoBehaviour
 {
     [SerializeField] private FactionType _faction = default;
     [SerializeField] private UnitType _unitType = default;
+
     [SerializeField] private DamageableType _damageableType = default;
+
     //[SerializeField] private UnitType _unitType = default;
     [SerializeField] private HealthConfigSO _healthConfigSO = default;
     [SerializeField] private DamageableUICanvas _damageableUICanvas = default;
-    [Header("Broadcasting on")]
-    [SerializeField] private CountUnitEventChannelSO _countUnitChannel = default;
+
+    [Header("Broadcasting on")] [SerializeField]
+    private CountUnitEventChannelSO _countUnitChannel = default;
+
     private int _unitID;
     private int _currentHealth = default;
     private Controllable _controllable;
@@ -23,13 +27,15 @@ public class Damageable : MonoBehaviour
     public FactionType Faction => _faction;
     public UnitType UnitType => _unitType;
     public DamageableType DamageableType => _damageableType;
-    public int CurrentHealth => _currentHealth;
+    public int CurrentHealth { get; set; }
     public int UnitID => _unitID;
     public Controllable Controllable => _controllable;
 
     public bool IsGettingHit { get; set; } = false;
     public bool IsLowHealth => _isLowHealth;
     public bool IsDead { get; set; } = false;
+
+    public BuildableItemSO BuildableItem { get; set; }
 
     public event UnityAction<Damageable> OnDie;
 
@@ -71,7 +77,7 @@ public class Damageable : MonoBehaviour
             if (OnDie != null)
                 OnDie.Invoke(this);
         }
-        else if(_currentHealth < _healthConfigSO.MaxHealth * 0.5f)
+        else if (_currentHealth < _healthConfigSO.MaxHealth * 0.5f)
         {
             _isLowHealth = true;
         }
@@ -100,8 +106,20 @@ public class Damageable : MonoBehaviour
     }
 }
 
-public enum FactionType { None, GDI, Nod }
-public enum DamageableType { Human, Vehicle, Construction }
+public enum FactionType
+{
+    None,
+    GDI,
+    Nod
+}
+
+public enum DamageableType
+{
+    Human,
+    Vehicle,
+    Construction
+}
+
 public enum UnitAlignment
 {
     None = -1,
