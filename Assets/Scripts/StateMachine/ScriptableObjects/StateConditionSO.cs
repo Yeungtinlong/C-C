@@ -19,5 +19,7 @@ namespace CNC.StateMachine.ScriptableObjects
         }
 
         protected abstract Condition CreateCondition();
+
+        public Condition GetCondition() => CreateCondition();
     }
 }

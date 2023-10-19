@@ -26,7 +26,7 @@ public class SceneLoader : MonoBehaviour
     private float _fadeDuration = 0.5f;
     private bool _isShowLoadingScreen;
 
-    // SceneµÄ·â×°£¬ÓÃÓÚÒì²½²Ù×÷
+    // Sceneçš„å°è£…ï¼Œç”¨äºå¼‚æ­¥æ“ä½œ
     private SceneInstance _gameplayManagerSceneInstance = new SceneInstance();
 
 
@@ -52,7 +52,7 @@ public class SceneLoader : MonoBehaviour
 
 #if UNITY_EDITOR
     /// <summary>
-    /// ÕâÀïµÄÀäÆô¶¯ÊÇÌØÖ¸Ö±½Ó´Ó¹Ø¿¨µÄ½çÃæµãPlay°´Å¥ÔËĞĞ£¬ÕâÊ±ĞèÒª¼ÓÔØGameplay³¡¾°²ÅÄÜÕı³£ÓÎÏ·¡£Èç¹ûÊÇÍ¨¹ıÖ÷²Ëµ¥¼ÓÔØÓÎÏ·¾Í²»ËãÀäÆô¶¯¡£
+    /// è¿™é‡Œçš„å†·å¯åŠ¨æ˜¯ç‰¹æŒ‡ç›´æ¥ä»å…³å¡çš„ç•Œé¢ç‚¹PlayæŒ‰é’®è¿è¡Œï¼Œè¿™æ—¶éœ€è¦åŠ è½½Gameplayåœºæ™¯æ‰èƒ½æ­£å¸¸æ¸¸æˆã€‚å¦‚æœæ˜¯é€šè¿‡ä¸»èœå•åŠ è½½æ¸¸æˆå°±ä¸ç®—å†·å¯åŠ¨ã€‚
     /// </summary>
     private void LevelColdStartup(GameSceneSO currentOpenedScene, bool isShowLoadingScreen, bool isFadeScreen)
     {
@@ -69,7 +69,7 @@ public class SceneLoader : MonoBehaviour
 #endif
 
     /// <summary>
-    /// Õı³£¼ÓÔØ³¡¾°£¨·ÇÀäÆô¶¯£©£¬ÔòÅĞ¶¨ÊÇ·ñÓĞGameplay³¡¾°£¬Ã»ÓĞµÄ»°¾Í¼ÓÔØ
+    /// æ­£å¸¸åŠ è½½åœºæ™¯ï¼ˆéå†·å¯åŠ¨ï¼‰ï¼Œåˆ™åˆ¤å®šæ˜¯å¦æœ‰Gameplayåœºæ™¯ï¼Œæ²¡æœ‰çš„è¯å°±åŠ è½½
     /// </summary>
     private void LoadLevel(GameSceneSO levelToLoad, bool isShowLoadingScreen, bool isFadeScreen)
     {
@@ -80,7 +80,7 @@ public class SceneLoader : MonoBehaviour
         _isShowLoadingScreen = isShowLoadingScreen;
         _isLoading = true;
 
-        // Èç¹û»¹Ã»ÓĞGameplay³¡¾°£¬¾ÍĞèÒªÏÈ¼ÓÔØGamplayÔÙ¼ÓÔØLevel£¨µÚÒ»´Î°´¿ªÊ¼ÓÎÏ·½øÈëÊ±£©
+        // å¦‚æœè¿˜æ²¡æœ‰Gameplayåœºæ™¯ï¼Œå°±éœ€è¦å…ˆåŠ è½½Gamplayå†åŠ è½½Levelï¼ˆç¬¬ä¸€æ¬¡æŒ‰å¼€å§‹æ¸¸æˆè¿›å…¥æ—¶ï¼‰
         if (_gameplayManagerSceneInstance.Scene == null || !_gameplayManagerSceneInstance.Scene.isLoaded)
         {
             _gameplayManagerLoadingOpHandle = _sceneToLoad.sceneReference.LoadSceneAsync(LoadSceneMode.Additive, true);
@@ -109,7 +109,7 @@ public class SceneLoader : MonoBehaviour
 
         yield return new WaitForSeconds(_fadeDuration);
 
-        if (_currentlyLoadedScene != null) // ÈôÕı³£³õÊ¼»¯½øÈëÓÎÏ·£¬È»ºóµã»÷¿ªÊ¼²Ëµ¥¼ÓÈëÓÎÏ·µÄ»°£¬Ôò_currentlyLoadedSceneÎªnull
+        if (_currentlyLoadedScene != null) // è‹¥æ­£å¸¸åˆå§‹åŒ–è¿›å…¥æ¸¸æˆï¼Œç„¶åç‚¹å‡»å¼€å§‹èœå•åŠ å…¥æ¸¸æˆçš„è¯ï¼Œåˆ™_currentlyLoadedSceneä¸ºnull
         {
             Debug.Log(_currentlyLoadedScene.name);
             if (_currentlyLoadedScene.sceneReference.OperationHandle.IsValid())
@@ -120,9 +120,9 @@ public class SceneLoader : MonoBehaviour
 #if UNITY_EDITOR
             else
             {
-                // µ±ÀäÆô¶¯ºó£¬Íæ¼ÒÇĞ»»µ½ĞÂµÄ³¡¾°¡£
-                // ´ËÊ±£¬³¡¾°¼ÓÔØµÄÒì²½handle²¢Î´±»Ê¹ÓÃ¹ı¡£
-                // ¹ÊÊ¹ÓÃSceneManager´úÌæAddressableµÄĞ¶ÔØ³¡¾°·½°¸¡£
+                // å½“å†·å¯åŠ¨åï¼Œç©å®¶åˆ‡æ¢åˆ°æ–°çš„åœºæ™¯ã€‚
+                // æ­¤æ—¶ï¼Œåœºæ™¯åŠ è½½çš„å¼‚æ­¥handleå¹¶æœªè¢«ä½¿ç”¨è¿‡ã€‚
+                // æ•…ä½¿ç”¨SceneManagerä»£æ›¿Addressableçš„å¸è½½åœºæ™¯æ–¹æ¡ˆã€‚
                 SceneManager.UnloadSceneAsync(_currentlyLoadedScene.sceneReference.editorAsset.name);
             }
 #endif
@@ -153,7 +153,7 @@ public class SceneLoader : MonoBehaviour
 
     private void StartGameplay()
     {
-        _onSceneReady.RaiseEvent(); // ³¡¾°×¼±¸Íê±Ï£¬²¥·Å¹ı³¡¶¯»­»ò¿ªÊ¼ÓÎÏ·
+        _onSceneReady.RaiseEvent(); // åœºæ™¯å‡†å¤‡å®Œæ¯•ï¼Œæ’­æ”¾è¿‡åœºåŠ¨ç”»æˆ–å¼€å§‹æ¸¸æˆ
     }
 
     private void ExitGame()

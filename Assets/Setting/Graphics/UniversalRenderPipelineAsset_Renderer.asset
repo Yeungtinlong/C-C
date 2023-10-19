@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf9d0ff4f296fa40887cd83ea6e4473, type: 3}
   m_Name: ScreenSpaceOutline
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   _ssOutlineSettings:
     TargetLayerMask:
       serializedVersion: 2
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 012b6d522886b2647b803a3590c9349a, type: 3}
   m_Name: FogOfWar
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   _setting:
     RenderPassEvent: 550
     VisibilitySystemSO: {fileID: 11400000, guid: c0cc6535595cb1b44bfaf2cf5b8fcd6d,

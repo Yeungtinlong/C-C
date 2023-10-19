@@ -20,6 +20,8 @@ namespace CNC.StateMachine.ScriptableObjects
         }
 
         protected abstract StateAction CreateAction();
+
+        public StateAction GetAction() => CreateAction();
     }
 }
 

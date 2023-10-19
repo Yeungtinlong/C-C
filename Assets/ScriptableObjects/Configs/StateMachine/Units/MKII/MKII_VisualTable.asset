@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Name: Stay
   m_EditorClassIdentifier: 
   stateName: --Stay--
-  position: {x: -139.80865, y: 422.78082}
+  position: {x: -65.57979, y: 447.13626}
   guid: bd9ce849bd800154fb83a761f80b73c9
   _actions: []
 --- !u!114 &-3904859466026342836
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: Defence
   m_EditorClassIdentifier: 
   stateName: --Defence--
-  position: {x: 556, y: 488}
+  position: {x: 574.99994, y: 374.99997}
   guid: abec455171b902d48aee12e8a2094d6e
   _actions: []
 --- !u!114 &-1714373584165834380
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stateName: NoDriver
-  position: {x: 26.42334, y: -44}
+  position: {x: 21.437262, y: 67.02394}
   guid: 42042c88bceafed47a2ee564944506b1
   _actions:
   - {fileID: 11400000, guid: 76903d889e3f2ee4cac55e520de062b1, type: 2}
@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Name: Idle (Initialize)
   m_EditorClassIdentifier: 
   stateName: --Idle--
-  position: {x: 130.25, y: 174.00002}
+  position: {x: 233.41946, y: 237.87677}
   guid: 1ee816315d6b0dc41a71be87ba1ae8e8
   _actions:
   - {fileID: 11400000, guid: 76903d889e3f2ee4cac55e520de062b1, type: 2}

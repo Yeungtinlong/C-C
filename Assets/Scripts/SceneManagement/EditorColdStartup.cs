@@ -16,7 +16,7 @@ public class EditorColdStartup : MonoBehaviour
 
     private void Awake()
     {
-        // Èç¹ûPersistentManagers³¡¾°Î´¼ÓÔØ£¬ÔòÅĞ¶¨ÎªÀäÆô¶¯
+        // å¦‚æœPersistentManagersåœºæ™¯æœªåŠ è½½ï¼Œåˆ™åˆ¤å®šä¸ºå†·å¯åŠ¨
         if (!SceneManager.GetSceneByName(_persistentManagersSO.sceneReference.editorAsset.name).isLoaded)
         {
             _isColdStart = true;
