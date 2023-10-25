@@ -46,6 +46,9 @@ namespace CNC.StateMachine
 
         public bool GetStatement()
         {
+            return Statement();
+            
+            // TODO: Remove Cache Judgement to use VS StateMachine.
             if (!IsCached)
             {
                 _cachedStatement = Statement();

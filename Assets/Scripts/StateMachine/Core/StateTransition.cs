@@ -45,13 +45,13 @@ namespace CNC.StateMachine
         {
             int count = _resultGroups.Length;
 
-            // Ëã³öÃ¿Ò»×éµÄ½á¹û
+            // ï¿½ï¿½ï¿½Ã¿Ò»ï¿½ï¿½Ä½ï¿½ï¿½
             for (int i = 0, idx = 0; i < count && idx < _stateConditions.Length; i++)
             {
-                // i´ú±íµÚ¼¸×é£¬j´ú±í¸Ã×éµÄµÚ¼¸¸öcondition£¬idx´ú±íµ±Ç°conditionÔÚÈ«²¿conditionÖÐµÄË÷Òý
+                // iï¿½ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½é£¬jï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÄµÚ¼ï¿½ï¿½ï¿½conditionï¿½ï¿½idxï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°conditionï¿½ï¿½È«ï¿½ï¿½conditionï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
                 for (int j = 0; j < _resultGroups[i]; j++, idx++)
                 {
-                    // ×éÄÚ "and" ÔËËã
+                    // ï¿½ï¿½ï¿½ï¿½ "and" ï¿½ï¿½ï¿½ï¿½
                     if (j == 0)
                     {
                         _results[i] = _stateConditions[idx].IsMet();
@@ -65,7 +65,7 @@ namespace CNC.StateMachine
 
             bool result = false;
 
-            // ×éÖ®¼ä "or" ÔËËã£¬!result´ú±íÖ»Òª³öÏÖÁËtrue¾Í¿ÉÒÔÌáÇ°½áÊøÑ­»·
+            // ï¿½ï¿½Ö®ï¿½ï¿½ "or" ï¿½ï¿½ï¿½ã£¬!resultï¿½ï¿½ï¿½ï¿½Ö»Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½trueï¿½Í¿ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½
             for (int i = 0; i < _results.Length && !result; i++)
             {
                 result = _results[i] || result;

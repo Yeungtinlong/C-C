@@ -185,7 +185,7 @@ public class Commander : MonoBehaviour
 
     private void OnMouseMove(Vector2 currentPoint)
     {
-        // °´ÏÂÁËÖÐ¼ä¡£
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ä¡£
         if (_isShowingPlatoonGhost)
         {
             if (_tempPlatoon != null && _isPointingGround)
@@ -194,7 +194,7 @@ public class Commander : MonoBehaviour
                 _tempPlatoon.ShowMoveCommandGhost(_tempPlatoonCenter, alignment);
             }
         }
-        // Ã»ÓÐ°´ÏÂÖÐ¼ü¡£
+        // Ã»ï¿½Ð°ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½
         else
         {
             if (_selectionState == SelectState.Single &&
@@ -244,7 +244,7 @@ public class Commander : MonoBehaviour
                             _lastHoldingUnit = _currentPointingUnit;
                         }
                     }
-                    // Ê§È¥ÊÓÒ°Ê±£¬¹Ø±ÕÉúÃüÖµÏÔÊ¾¡£
+                    // Ê§È¥ï¿½ï¿½Ò°Ê±ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ê¾ï¿½ï¿½
                     else if (_lastHoldingUnit == _currentPointingUnit)
                     {
                         Damageable damageable = _currentPointingUnit.Damageable;
@@ -538,6 +538,7 @@ public class Command
 
 public enum CommandType
 {
+    None,
     Move,
     Chase,
     Stop,

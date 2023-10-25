@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6e6a602-e53e-4b8c-9185-5aae7edb2121" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/TextMesh Pro/Examples &amp; Extras/Materials/Crate - Surface Shader Scene.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/TextMesh Pro/Examples &amp; Extras/Materials/Crate - Surface Shader Scene.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Logo Scene.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Logo Scene.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Surface Shader Scene.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Surface Shader Scene.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/TextMesh Pro/Examples &amp; Extras/Materials/Small Crate_diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/TextMesh Pro/Examples &amp; Extras/Materials/Small Crate_diffuse.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Effects/BulletFlame.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Effects/BulletFlame.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/BrokenVector/LowPolyRockPack/Materials/Green.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/BrokenVector/LowPolyRockPack/Materials/Green.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/BrokenVector/LowPolyRockPack/Materials/Grey.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/BrokenVector/LowPolyRockPack/Materials/Grey.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/BrokenVector/LowPolyRockPack/Materials/Orange.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/BrokenVector/LowPolyRockPack/Materials/Orange.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/BrokenVector/LowPolyRockPack/Materials/Sand.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/BrokenVector/LowPolyRockPack/Materials/Sand.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/Low Poly Buildings Lite/Models/Materials/Ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/Low Poly Buildings Lite/Models/Materials/Ground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/Low Poly Buildings Lite/Models/Materials/Suburb House 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/Low Poly Buildings Lite/Models/Materials/Suburb House 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/Low Poly Buildings Lite/Models/Materials/Suburb House Grey.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/Low Poly Buildings Lite/Models/Materials/Suburb House Grey.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/Low Poly Buildings Lite/Models/Materials/Suburb House Yellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/Low Poly Buildings Lite/Models/Materials/Suburb House Yellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Charakter/Hair/Hair_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Charakter/Hair/Hair_2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Charakter/Hair/Hair_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Charakter/Hair/Hair_3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Charakter/Hat/Hat_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Charakter/Hat/Hat_2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Charakter/Shirt/ShirtColor_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Charakter/Shirt/ShirtColor_2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Charakter/Shirt/ShirtColor_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Charakter/Shirt/ShirtColor_3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Charakter/Skin/SkinColor_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Charakter/Skin/SkinColor_2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Charakter/Skin/SkinColor_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Charakter/Skin/SkinColor_3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Charakter/Trouseres/Trouseres_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Charakter/Trouseres/Trouseres_2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Fire/Fire.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Fire/Fire.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Fire/Smoke.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Fire/Smoke.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Others/Tend_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Others/Tend_2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Others/Tend_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Others/Tend_3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Stones/Moos_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Stones/Moos_2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Trees/Autum_Leaves.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Trees/Autum_Leaves.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Trees/Spring_Leaves.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Trees/Spring_Leaves.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Trees/Summer_Leaves.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowPoly Nature Pack/Materials/Trees/Summer_Leaves.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowpolyVegetationPackFree/Materials/PalettesVegetationPackFree.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowpolyVegetationPackFree/Materials/PalettesVegetationPackFree.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowpolyVegetationPackFree/Materials/PalettesVegetationsPackBonusFree.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/LowpolyVegetationPackFree/Materials/PalettesVegetationsPackBonusFree.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_BirchLeaves.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_BirchLeaves.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_BirchTree.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_BirchTree.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_Ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_Ground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_Leaves.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_Leaves.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_Mountain.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_Mountain.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_OakLeaves.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_OakLeaves.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_OakTreeTrunk.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_OakTreeTrunk.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_PineNeedles.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_PineNeedles.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_PineTrunk.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_PineTrunk.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_Rock01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_Rock01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_Rock02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_Rock02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_Rock03.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_Rock03.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_StumpBark.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_StumpBark.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_StumpWood.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_StumpWood.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_Tree.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/LowPolyPackage/greyRoadStudio/LowPolyTreePack/Materials/Mat_Tree.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Bullet.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Bullet.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Effects/BurstSpark.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Effects/BurstSpark.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Effects/Explsion.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Effects/Explsion.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Effects/ExplsionSmoke.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Effects/ExplsionSmoke.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Effects/FlashPoint.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Effects/FlashPoint.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Faction/ComradeColor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Faction/ComradeColor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/GenerateWater.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/GenerateWater.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/GrayWall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/GrayWall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Hitting.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Hitting.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Land.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Land.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/New Terrain Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/New Terrain Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Projectile/MissileEffect.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Projectile/MissileEffect.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Projectile/MissileSmoke.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Projectile/MissileSmoke.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Projectile/MissileSmoke_Particle.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Projectile/MissileSmoke_Particle.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Projectile/RailGunMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Projectile/RailGunMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Projectile/TankDamageEngineSmoke.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Projectile/TankDamageEngineSmoke.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Projectile/TankEngineSmoke.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Projectile/TankEngineSmoke.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Smoke.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Smoke.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/TrackMark.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/TrackMark.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/Commando/Materials/GD2Gray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/Commando/Materials/GD2Gray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/Commando/Materials/GD2Main.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/Commando/Materials/GD2Main.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/Commando/Materials/Material.001.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/Commando/Materials/Material.001.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/Commando/Materials/Material.003.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/Commando/Materials/Material.003.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/MammothTank/Materials/Black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/MammothTank/Materials/Black.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/MammothTank/Materials/CommonGray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/MammothTank/Materials/CommonGray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/MammothTank/Materials/CommonLowGray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/MammothTank/Materials/CommonLowGray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/MammothTank/Materials/CommonWhite.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/MammothTank/Materials/CommonWhite.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/MammothTank/Materials/GDIYellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/MammothTank/Materials/GDIYellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/MammothTank/Materials/Gray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/MammothTank/Materials/Gray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/MammothTank/Materials/Orange.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/MammothTank/Materials/Orange.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/MiddleTank/Materials/Black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/MiddleTank/Materials/Black.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/MiddleTank/Materials/CommonGray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/MiddleTank/Materials/CommonGray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/MiddleTank/Materials/CommonLowGray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/MiddleTank/Materials/CommonLowGray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/MiddleTank/Materials/GDIYellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/MiddleTank/Materials/GDIYellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/MiddleTank/Materials/Gray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/MiddleTank/Materials/Gray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/MiddleTank/Materials/Orange.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/MiddleTank/Materials/Orange.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/GDI/MiddleTank/Materials/White.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/GDI/MiddleTank/Materials/White.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/Materials/GDI/Black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/Materials/GDI/Black.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/Materials/GDI/CommonGray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/Materials/GDI/CommonGray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/Materials/GDI/CommonLowGray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/Materials/GDI/CommonLowGray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/Materials/GDI/GDIYellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/Materials/GDI/GDIYellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/Materials/GDI/Gray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/Materials/GDI/Gray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/Materials/GDI/Orange.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/Materials/GDI/Orange.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/Materials/GDI/White.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/Materials/GDI/White.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/Materials/MKIIMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/Materials/MKIIMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/Materials/Nod/Materials/CommonGray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/Materials/Nod/Materials/CommonGray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/Materials/Nod/Materials/CommonLowGray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/Materials/Nod/Materials/CommonLowGray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/Materials/Nod/Materials/NodBlue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/Materials/Nod/Materials/NodBlue.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Model/Nod/Materials/defaultMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Model/Nod/Materials/defaultMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effect/VFX/DeadEffect.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effect/VFX/DeadEffect.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effect/VFX/FlameEffect.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effect/VFX/FlameEffect.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effect/VFX/SmokeEffect.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effect/VFX/SmokeEffect.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effect/VFX/TankFireEffect.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effect/VFX/TankFireEffect.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effect/VFX/TankHitEffect.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effect/VFX/TankHitEffect.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effect/VFX/Tornado.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effect/VFX/Tornado.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectile/BulletTrail.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectile/BulletTrail.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Blocks/Interpolate Fade Attribute.vfxblock" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Blocks/Interpolate Fade Attribute.vfxblock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Blocks/Orient - Smart Fixed Axis.vfxblock" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Blocks/Orient - Smart Fixed Axis.vfxblock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Blocks/Orient - VR Camera Facing.vfxblock" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Blocks/Orient - VR Camera Facing.vfxblock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Blocks/Set Color and Alpha.vfxblock" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Blocks/Set Color and Alpha.vfxblock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Blocks/Set stripProgress Attribute.vfxblock" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Blocks/Set stripProgress Attribute.vfxblock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Blocks/Vortex.vfxblock" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Blocks/Vortex.vfxblock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Bound (Oriented Box).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Bound (Oriented Box).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Bound (Sphere).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Bound (Sphere).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Clamp (AABox).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Clamp (AABox).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Clamp (Sphere).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Clamp (Sphere).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Degrees to Radians.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Degrees to Radians.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Encompass (AABox).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Encompass (AABox).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Encompass (Oriented Box).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Encompass (Oriented Box).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Encompass (Position).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Encompass (Position).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Encompass (Sphere).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Encompass (Sphere).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Feather Step.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Feather Step.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Get Color and Alpha (Current).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Get Color and Alpha (Current).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Get Color and Alpha (Source).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Get Color and Alpha (Source).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Get Fade Attribute.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Get Fade Attribute.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Get Strip Progress.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Get Strip Progress.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Get stripProgress Attribute.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Get stripProgress Attribute.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Measure (AABox).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Measure (AABox).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Measure (Circle).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Measure (Circle).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Measure (Oriented Box).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Measure (Oriented Box).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Measure (Sphere).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Measure (Sphere).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Periodic Vector Animation.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Periodic Vector Animation.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Radians to Degrees.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Radians to Degrees.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Random Position (Circle).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Random Position (Circle).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Random Position (Sphere).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Random Position (Sphere).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Random Vector.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Random Vector.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Sample 1D Linear.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Sample 1D Linear.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Sample Multiple Position Map.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Sample Multiple Position Map.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Spring (1D).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Spring (1D).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Spring (Sphere).vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Spring (Sphere).vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease In Bounce.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease In Bounce.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease In Circ.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease In Circ.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease In Elastic.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease In Elastic.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease In Expo.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease In Expo.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease In Quart.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease In Quart.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease In Sine.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease In Sine.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease InOut Bounce.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease InOut Bounce.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease InOut Circ.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease InOut Circ.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease InOut Elastic.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease InOut Elastic.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease InOut Expo.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease InOut Expo.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease InOut Quart.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease InOut Quart.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease InOut Sine.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease InOut Sine.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease Out Bounce.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease Out Bounce.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease Out Circ.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease Out Circ.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease Out Elastic.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease Out Elastic.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease Out Expo.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease Out Expo.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease Out Quart.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease Out Quart.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease Out Sine.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/Subgraphs/Operators/Tween/Tween Ease Out Sine.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/VFX/Bonfire.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/VFX/Bonfire.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/VFX/Flames.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/VFX/Flames.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/VFX/Lightning.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/VFX/Lightning.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/VFX/Smoke.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/VFX/Smoke.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/VFX/Sparks.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Visual Effect Graph/10.5.0/VisualEffectGraph Additions/VFX/Sparks.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/GDI_Level_01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/GDI_Level_01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Commander.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/Commander.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Core/StateCondition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Core/StateCondition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Core/StateTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Core/StateTransition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/ScriptableObjects/StateActionSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/ScriptableObjects/StateActionSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/ScriptableObjects/StateConditionSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/ScriptableObjects/StateConditionSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/Entity/Controllable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/Entity/Controllable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Setting/Graphics/UniversalRenderPipelineAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Setting/Graphics/UniversalRenderPipelineAsset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Setting/Graphics/UniversalRenderPipelineAsset_Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Setting/Graphics/UniversalRenderPipelineAsset_Renderer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Setting/Input/GameInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Setting/Input/GameInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Flow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cef700316b704caa9ab111927ba6b61138200/19/57d52524/FsmArray.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cef700316b704caa9ab111927ba6b61138200/3a/a916305b/FsmBool.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cef700316b704caa9ab111927ba6b61138200/75/92464ee5/VariableTypeAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cef700316b704caa9ab111927ba6b61138200/ee/06456e84/ObjectTypeAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cef700316b704caa9ab111927ba6b61138200/f9/2ed7b0ee/FsmTransition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f60cc54dc2224212af1801023aab933915e800/fd/4f2b6b50/CustomActionEditor.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2Wz2VNXmlc7sFSNJcBfqzPiMtdK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Bolt__StateMachine&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/danny/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/danny/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
+      &quot;/Users/danny/.local/share/Symbols/src&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="/Applications/Unity/Unity.app/Contents/MacOS/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="/Applications/Unity/Unity.app/Contents/MacOS/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="69928">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="69928" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6e6a602-e53e-4b8c-9185-5aae7edb2121" name="Changes" comment="" />
+      <created>1697721111050</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697721111050</updated>
+      <workItem from="1697721112123" duration="5081000" />
+      <workItem from="1697956304994" duration="1565000" />
+      <workItem from="1698151349656" duration="10595000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Conditions/IsMovingConditionSO.cs</url>
+          <line>23</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Conditions/IsMovingConditionSO.cs" initialLine="23" containingFunctionPresentation="Method 'Statement'">
+            <startOffsets>
+              <option value="691" />
+            </startOffsets>
+            <endOffsets>
+              <option value="735" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Conditions/IsMovingConditionSO.cs</url>
+          <line>22</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Conditions/IsMovingConditionSO.cs" initialLine="22" containingFunctionPresentation="Method 'Statement'">
+            <startOffsets>
+              <option value="677" />
+            </startOffsets>
+            <endOffsets>
+              <option value="678" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/StateMachine/Core/StateCondition.cs</url>
+          <line>15</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Core/StateCondition.cs" initialLine="15" containingFunctionPresentation="Constructor 'StateCondition'">
+            <startOffsets>
+              <option value="540" />
+            </startOffsets>
+            <endOffsets>
+              <option value="541" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

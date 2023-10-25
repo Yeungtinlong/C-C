@@ -19,5 +19,12 @@ namespace CNC.StateMachine.ScriptableObjects
         }
 
         protected abstract Condition CreateCondition();
+
+        public Condition GetCondition()
+        {
+            var condition = CreateCondition();
+            condition._originSO = this;
+            return condition;
+        }
     }
 }
