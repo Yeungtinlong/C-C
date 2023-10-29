@@ -5,109 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6e6a602-e53e-4b8c-9185-5aae7edb2121" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Path.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Path/Path.Direction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Path/Path.Direction.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Path/Path.NodeState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Path/Path.NodeState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Path/Path.PathNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Path/Path.PathNode.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Path/Path.PathResult.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Path/Path.PathResult.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Path/Path.VisitedNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Path/Path.VisitedNode.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Abstract.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Abstract/IPathDriver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Abstract/IPathDriver.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Abstract/PathDriverBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Abstract/PathDriverBase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/ArrivalResult.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/ArrivalResult.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/DriverInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/DriverInfo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/DriverState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/DriverState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/LocomotionType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/LocomotionType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Maneuvers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Maneuvers/Drift.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Maneuvers/Drift.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Maneuvers/InPlaceTurn.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Maneuvers/InPlaceTurn.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Maneuvers/Straight.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Maneuvers/Straight.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Maneuvers/Turn.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Maneuvers/Turn.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/PathDriver.ArrivalState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/PathDriver.ArrivalState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/PathDriver.CollisionInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/PathDriver.CollisionInfo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/PathDriverUtils.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/PathDriverUtils/PathDriverUtils.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/PathDriverUtils/PathDriverUtils.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathGenerator.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathGenerator/IPathGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathGenerator/IPathGenerator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/ProximityManager.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/ProximityManager/IProximityManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/ProximityManager/IProximityManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/ProximityManager/ProximityManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/ProximityManager/ProximityManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/ProximityManager/ProximityManagerInternal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/ProximityManager/ProximityManagerInternal.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Core/Condition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Core/Condition.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.C-C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.C-C/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Nod/LightTank_Origin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Nod/LightTank_Origin.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Nod/MKII_Origin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Nod/MKII_Origin.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/GDI_Level_01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/GDI_Level_01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/GDI_Level_01/NavMesh.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/GDI_Level_01/NavMesh.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/StateMachine/Units/Actions/DestoryAction.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/StateMachine/Units/Actions/DestoryAction.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/AStarPathGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathGenerator/AStarPathGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/AStarPathGenerator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathGenerator/AStarPathGenerator.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/BlockMapSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/BlockMapSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/DriverProxy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/DriverProxy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Maneuver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Maneuvers/Maneuver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Maneuver.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Maneuvers/Maneuver.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Path.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Path/Path.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Path.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/Path/Path.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/PathDriver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/PathDriver.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/TerrainManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/TerrainManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/UnitGridSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/UnitGridSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/UnitProximitySO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/UnitProximitySO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Core/StateCondition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Core/StateCondition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/Entity/Damageable/Damageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/Entity/Damageable/Damageable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/Entity/RotatableTower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/Entity/RotatableTower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/Human.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/Human.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Actions/ChasingActionSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Actions/ChasingActionSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Actions/DestoryActionSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Actions/DestroyActionSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Actions/DestoryActionSO.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Actions/DestroyActionSO.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Actions/FaceToEnemyActionSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Actions/FaceToEnemyActionSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Actions/MovingActionSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Actions/MovingActionSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Actions/RotatingActionSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Actions/RotatingActionSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Actions/StopActionSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Actions/StopActionSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Actions/StopMovingActionSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Actions/StopMovingActionSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Conditions/HasChasedTargetConditionSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Conditions/HasChasedTargetConditionSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Conditions/HasReachedConditionSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Conditions/HasReachedConditionSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Conditions/HasRotatedToOrientationConditionSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Conditions/HasRotatedToOrientationConditionSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Conditions/HasTowerAimedAtEnemyConditionSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Conditions/HasTowerAimedAtEnemyConditionSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Conditions/IsDeadConditionSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unit/StateMachine/Conditions/IsDeadConditionSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VisibilitySystem/VisibilitySystemSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VisibilitySystem/VisibilitySystemSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VisualScripting_StateMachine.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VisualScripting_StateMachine/TankStateMachine.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VisualScripting_StateMachine/TankStateMachine.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VisualScripting_StateMachine/_State.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VisualScripting_StateMachine/_State.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VisualScripting_StateMachine/_StateCondition.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VisualScripting_StateMachine/_StateCondition.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/VisualScriptingSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VisualScriptingSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Abstract/PathDriverBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/Abstract/PathDriverBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/PathDriver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/PathDriver/PathDriver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/ProximityManager/ProximityManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/ProximityManager/ProximityManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathFinding/ProximityManager/ProximityManagerInternal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PathFinding/ProximityManager/ProximityManagerInternal.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +43,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cef700316b704caa9ab111927ba6b61138200/ee/06456e84/ObjectTypeAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cef700316b704caa9ab111927ba6b61138200/f9/2ed7b0ee/FsmTransition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f60cc54dc2224212af1801023aab933915e800/fd/4f2b6b50/CustomActionEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///private/var/folders/v7/j57xjz1530zf7kr23kyznwc80000gn/T/Assets_Scripts_PathFinding_PathDriver_PathDriver_Before_e4811f9c70cbdb82a6e0b29c8ff42b214ff2a590.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -198,10 +102,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="83874">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3077">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="83874" />
+      <option name="pid" value="3077" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -222,7 +126,7 @@
       <workItem from="1698151349656" duration="13859000" />
       <workItem from="1698324346577" duration="12085000" />
       <workItem from="1698410964070" duration="9933000" />
-      <workItem from="1698471072845" duration="22147000" />
+      <workItem from="1698471072845" duration="24459000" />
     </task>
     <servers />
   </component>

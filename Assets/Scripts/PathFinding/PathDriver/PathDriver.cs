@@ -118,18 +118,6 @@ namespace CNC.PathFinding
             }
         }
 #endif
-
-        private void OnEnable()
-        {
-            Damageable.OnDie += RemoveFromGridOnDie;
-        }
-
-        private void OnDisable()
-        {
-            Damageable.OnDie -= RemoveFromGridOnDie;
-        }
-        
-        
         /// <summary>
         /// 供外部调用修改导航目的地。
         /// </summary>
@@ -177,11 +165,6 @@ namespace CNC.PathFinding
                    _lastTargetApproachRange + ARRIVE_DISTANCE_THRESHOLD;
         }
         
-        private void RemoveFromGridOnDie(Damageable damageable)
-        {
-            _unitGridSO.RemoveFromIndex(_unitGridIndex, this);
-        }
-
         private void Start()
         {
             // 赋值_followCursor初始的位置与旋转。

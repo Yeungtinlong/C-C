@@ -7,10 +7,6 @@ namespace CNC.PathFinding
 {
     public abstract class PathDriverBase : MonoBehaviour, IPathDriver
     {
-#if UNITY_EDITOR
-        [SerializeField] private bool _showProximityManagerDebug;
-#endif
-        
         private const float DETECTION_RANGE = 25f;
         
         protected DriverState _currentDriverState;
@@ -18,13 +14,13 @@ namespace CNC.PathFinding
         protected int _unitProximityIndex = -1;
         protected bool _isFunctional = true; // TODO: 标志位，单位是否死亡
         protected List<IPathDriver> _proximityUnits = new List<IPathDriver>();
-        
+        protected readonly List<IPathDriver> _overlappingUnits = new List<IPathDriver>();
         protected float _lastTargetApproachRange;
         
         private readonly IProximityManager _proximityManager = ProximityManager.Singleton;
         
         protected int _unitGridIndex = -1;
-        protected readonly List<IPathDriver> _overlappingUnits = new List<IPathDriver>();
+        
         protected bool _isRequestingPath;
         
         protected bool _isIncludeAlignmentAtLast;
@@ -93,11 +89,20 @@ namespace CNC.PathFinding
             Controllable = GetComponent<Controllable>();
         }
 
+        private void OnEnable()
+        {
+            Damageable.OnDie += RemoveFromGridOnDie;
+        }
+
+        private void OnDisable()
+        {
+            Damageable.OnDie -= RemoveFromGridOnDie;
+        }
+        
         protected virtual void Update()
         {
-            UpdateUnitProximity();
             UpdateUnitGrid();
-            
+            UpdateUnitProximity();
             // PreUpdateMovement();
             UpdateMovement();
             PostUpdateMovement();
@@ -120,7 +125,7 @@ namespace CNC.PathFinding
                 UpdateNonMovement();
                 return;
             }
-
+            
             // UpdateUnitGrid();
             PreUpdateMovement();
             IsArrived = false;
@@ -162,7 +167,7 @@ namespace CNC.PathFinding
         
         private void UpdateUnitProximity()
         {
-            if (_proximityManager.TryGetGridIndexFromTransformPosition(Transform.position, out int currentGridIndex))
+            if (!_proximityManager.TryGetGridIndexFromTransformPosition(Transform.position, out int currentGridIndex))
                 return;
 
             if (currentGridIndex != _unitProximityIndex)
@@ -206,5 +211,11 @@ namespace CNC.PathFinding
         protected abstract void OnArrived();
         
         protected abstract void StopWithInertia();
+        
+        private void RemoveFromGridOnDie(Damageable damageable)
+        {
+            _unitGridSO.RemoveFromIndex(_unitGridIndex, this);
+            _proximityManager.RemoveUnitByGridIndex(_unitProximityIndex, this);
+        }
     }
 }

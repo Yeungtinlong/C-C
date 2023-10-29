@@ -46,14 +46,20 @@ namespace CNC.PathFinding.Proximity
 
         public void AddUnitToIndex(int index, IPathDriver unit)
         {
-            UnitGridRecord record = new UnitGridRecord { RecordType = RecordType.IPathDriver, IPathDriver = unit };
+            if (!IsGridIndexValid(index))
+                return;
+            
+            UnitGridRecord record = new UnitGridRecord { RecordType = RecordType.IPathDriver, PathDriver = unit };
             _proximityGrids[index].Add(record);
         }
 
         public void RemoveUnitByGridIndex(int index, IPathDriver unit)
         {
+            if (!IsGridIndexValid(index))
+                return;
+            
             _proximityGrids[index]
-                .Remove(new UnitGridRecord { RecordType = RecordType.IPathDriver, IPathDriver = unit });
+                .Remove(new UnitGridRecord { RecordType = RecordType.IPathDriver, PathDriver = unit });
         }
 
         public bool TryGetGridIndexFromTransformPosition(Vector3 transformPosition, out int gridIndex)
@@ -96,7 +102,7 @@ namespace CNC.PathFinding.Proximity
                     List<UnitGridRecord> unitGridRecords = _proximityGrids[x + z * _proximityGridWidth];
                     foreach (UnitGridRecord unitGridRecord in unitGridRecords)
                     {
-                        IPathDriver driver = unitGridRecord.IPathDriver;
+                        IPathDriver driver = unitGridRecord.PathDriver;
                         if (driver != null && driver != pathDriver)
                         {
                             Vector2 otherPoint = new Vector2(driver.Transform.position.x, driver.Transform.position.z);
@@ -116,7 +122,7 @@ namespace CNC.PathFinding.Proximity
         public struct UnitGridRecord
         {
             public RecordType RecordType { get; set; }
-            public IPathDriver IPathDriver { get; set; }
+            public IPathDriver PathDriver { get; set; }
         }
 
         public enum RecordType

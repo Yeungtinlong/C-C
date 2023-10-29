@@ -2,7 +2,7 @@ namespace CNC.PathFinding.Proximity
 {
     public class ProximityManager
     {
-        public static IProximityManager _singleton;
+        private static IProximityManager _singleton;
         
         public static IProximityManager Singleton
         {

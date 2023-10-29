@@ -13979,7 +13979,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _unitGridSO: {fileID: 11400000, guid: 95cff0e16cd4fd64c93d2707798ca18b, type: 2}
-  _unitProximitySO: {fileID: 11400000, guid: b36c50fcd4195694383171d4b13a8f80, type: 2}
   _surfaceMapSO: {fileID: 11400000, guid: 9c64c3af2cdaf9f4b9913132d7a7bd6d, type: 2}
   _blockMapSO: {fileID: 11400000, guid: 58ed0368e5e37924badd6bc1b9f57283, type: 2}
   _visibilitySystemSO: {fileID: 11400000, guid: c0cc6535595cb1b44bfaf2cf5b8fcd6d,
@@ -13988,7 +13987,7 @@ MonoBehaviour:
   _debugMode: 1
   _showBlockMap: 0
   _showUnitGrid: 0
-  _showProximity: 0
+  _showProximity: 1
   _showHeightMap: 0
   _fogOfWarPlane: {fileID: 1120840185}
 --- !u!4 &3744248055124239100 stripped
