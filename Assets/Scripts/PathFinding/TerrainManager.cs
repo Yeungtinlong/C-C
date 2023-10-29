@@ -1,11 +1,12 @@
 using UnityEngine;
 using CNC.PathFinding;
+using CNC.PathFinding.Proximity;
 using CNC.Utility;
 
 public class TerrainManager : MonoBehaviour
 {
     [SerializeField] private UnitGridSO _unitGridSO = default;
-    [SerializeField] private UnitProximitySO _unitProximitySO = default;
+    // [SerializeField] private UnitProximitySO _unitProximitySO = default;
     [SerializeField] private SurfaceMapSO _surfaceMapSO = default;
     [SerializeField] private BlockMapSO _blockMapSO = default;
     [SerializeField] private VisibilitySystemSO _visibilitySystemSO = default;
@@ -39,7 +40,7 @@ public class TerrainManager : MonoBehaviour
             _unitGridSO.ShowGridsInDebugMode();
 
         if (_showProximity)
-            _unitProximitySO.ShowBlocksInDebugMode();
+            ProximityManager.Singleton.ShowBlocksInDebugMode();
 
         if (_showHeightMap)
         {
@@ -75,7 +76,9 @@ public class TerrainManager : MonoBehaviour
 
     private void PrepareUnitProximity()
     {
-        _unitProximitySO.Initialize(_terrainWidth);
+        ProximityManager.Singleton.Initialize(_terrainWidth);
+        
+        // _unitProximitySO.Initialize(_terrainWidth);
     }
 
     private void PrepareSurfaceMap()

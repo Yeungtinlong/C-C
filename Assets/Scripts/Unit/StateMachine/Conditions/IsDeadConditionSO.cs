@@ -17,5 +17,5 @@ public class IsDeadCondition : Condition
         _damageable = stateMachine.GetComponent<Damageable>();
     }
 
-    public override bool Statement() => _damageable.IsDead;
+    public override bool Statement() => _damageable.IsDead && !_damageable.IsDestroyed;
 }

@@ -11,15 +11,17 @@ public class MovingActionSO : StateActionSO
 
 public class MovingAction : StateAction
 {
-    private PathDriver _driver;
+    private IPathDriver _driver;
     private Controllable _controllable;
     private Animator _animator;
 
     public override void OnAwake(StateMachine stateMachine)
     {
-        _driver = stateMachine.GetComponent<PathDriver>();
+        _driver = stateMachine.GetComponent<IPathDriver>();
         _controllable = stateMachine.GetComponent<Controllable>();
-        _animator = stateMachine.GetComponent<Animator>();
+        _animator = stateMachine.TryGetComponent(out _animator)
+            ? _animator
+            : stateMachine.GetComponent<AnimatorController>().ManualAnimator;
     }
 
     public override void OnUpdate()

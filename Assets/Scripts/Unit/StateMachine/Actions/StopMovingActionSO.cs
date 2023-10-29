@@ -13,11 +13,11 @@ public class StopMovingActionSO : StateActionSO
 public class StopMovingAction : StateAction
 {
     private StopMovingActionSO _originSO => OriginSO as StopMovingActionSO;
-    private PathDriver _driver;
+    private IPathDriver _driver;
 
     public override void OnAwake(StateMachine stateMachine)
     {
-        _driver = stateMachine.GetComponent<PathDriver>();
+        _driver = stateMachine.GetComponent<IPathDriver>();
     }
 
     public override void OnStateEnter()

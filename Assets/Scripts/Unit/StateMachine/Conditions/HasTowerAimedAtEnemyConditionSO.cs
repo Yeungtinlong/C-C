@@ -13,7 +13,6 @@ public class HasTowerAimedAtEnemyConditionSO : StateConditionSO
 public class HasTowerAimedAtEnemyCondition : Condition
 {
     private Attacker _attacker;
-    private Transform _transform;
     private RotatableTower _rotatableTower;
     private Transform _towerAnchor;
 
@@ -21,7 +20,6 @@ public class HasTowerAimedAtEnemyCondition : Condition
 
     public override void OnAwake(StateMachine stateMachine)
     {
-        _transform = stateMachine.transform;
         _attacker = stateMachine.GetComponent<Attacker>();
         _rotatableTower = stateMachine.GetComponent<RotatableTower>();
         _towerAnchor = _rotatableTower.TowerAnchor;
@@ -31,8 +29,13 @@ public class HasTowerAimedAtEnemyCondition : Condition
     {
         if (_attacker.CurrentEnemy != null)
         {
-            Vector3 towerOrientation = new Vector3(_towerAnchor.forward.x, 0f, _towerAnchor.forward.z);
-            Vector3 enemyDir = (_attacker.CurrentEnemy.transform.position - _transform.position).normalized;
+            Vector3 towerOrientation = _towerAnchor.forward;
+            towerOrientation.y = 0f;
+            Vector3 towerPos = _towerAnchor.position;
+            towerPos.y = 0f;
+            Vector3 enemyPos = _attacker.CurrentEnemy.transform.position;
+            enemyPos.y = 0f;
+            Vector3 enemyDir = (enemyPos - towerPos).normalized;
 
             return Vector3.Angle(towerOrientation, enemyDir) <= _originSO.Threshold;
         }

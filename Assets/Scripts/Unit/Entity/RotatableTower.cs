@@ -11,7 +11,7 @@ public class RotatableTower : MonoBehaviour
     public void RotateTo(Vector3 direction)
     {
         Quaternion targetRotation = Quaternion.LookRotation(direction);
-        Quaternion q = Quaternion.Slerp(_towerAnchor.rotation, targetRotation, _maxAngularSpeed * Mathf.Deg2Rad * Time.deltaTime);
-        _towerAnchor.rotation = Quaternion.RotateTowards(_towerAnchor.rotation, q, _maxAngularSpeed * Time.deltaTime);
+        // Quaternion q = Quaternion.Slerp(_towerAnchor.rotation, targetRotation, _maxAngularSpeed * Mathf.Deg2Rad * Time.deltaTime);
+        _towerAnchor.rotation = Quaternion.RotateTowards(_towerAnchor.rotation, targetRotation, _maxAngularSpeed * Time.deltaTime);
     }
 }

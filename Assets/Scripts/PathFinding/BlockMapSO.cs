@@ -41,7 +41,7 @@ namespace CNC.PathFinding
         }
 #endif
         
-        // ²ÎÊısizeXºÍsizeZÊÇÊÀ½çµØÍ¼µÄ¹æ¸ñ£¬gridSizeÊÇÒ»¸öblockMap¸ñ×ÓÕ¼ÓÃÊÀ½ç¿Õ¼äµÄ´óĞ¡£¬µ±blockMap±¶ÊıÓÚÊÀ½ç¸ñ×ÓÊ±£¬gridSize¾ÍĞ¡ÓÚ1¡£
+        // å‚æ•°sizeXå’ŒsizeZæ˜¯ä¸–ç•Œåœ°å›¾çš„è§„æ ¼ï¼ŒgridSizeæ˜¯ä¸€ä¸ªblockMapæ ¼å­å ç”¨ä¸–ç•Œç©ºé—´çš„å¤§å°ï¼Œå½“blockMapå€æ•°äºä¸–ç•Œæ ¼å­æ—¶ï¼ŒgridSizeå°±å°äº1ã€‚
         internal void Initialize(float worldSizeX, float worldSizeZ, float gridSize)
         {
             _toWorldScale = gridSize;
@@ -78,7 +78,7 @@ namespace CNC.PathFinding
             if (startX == endX && startZ == endZ)
                 return !IsBlockRestricted(startX + startZ * _sizeX, unitSizeInBlock, movementFlags);
 
-            // ×İÏò¼ì²â
+            // çºµå‘æ£€æµ‹
             if (deltaZ >= deltaX)
             {
                 if (start.y > end.y)
@@ -112,7 +112,7 @@ namespace CNC.PathFinding
 
                 return true;
             }
-            // deltaZ < deltaX£¬ºáÏò¼ì²â¡£
+            // deltaZ < deltaXï¼Œæ¨ªå‘æ£€æµ‹ã€‚
             else
             {
                 if (start.x > end.x)
@@ -149,7 +149,7 @@ namespace CNC.PathFinding
         }
 
         /// <summary>
-        /// ¼ì²é¸ÃÊÀ½ç×ø±êµØµãÊÇ·ñ×è°­Ä³ÖÖÀàĞÍ¡£
+        /// æ£€æŸ¥è¯¥ä¸–ç•Œåæ ‡åœ°ç‚¹æ˜¯å¦é˜»ç¢æŸç§ç±»å‹ã€‚
         /// </summary>
         /// <param name="worldPoint"></param>
         /// <param name="unitSizeInWorld"></param>
@@ -377,13 +377,13 @@ namespace CNC.PathFinding
         }
 
         /// <summary>
-        /// ÀûÓÃ»º´æÏÂµÄ½Úµã×´Ì¬£¬ÅĞ¶ÏÖ±ÏßÄÚÊÇ·ñÓĞ×è°­¡£
+        /// åˆ©ç”¨ç¼“å­˜ä¸‹çš„èŠ‚ç‚¹çŠ¶æ€ï¼Œåˆ¤æ–­ç›´çº¿å†…æ˜¯å¦æœ‰é˜»ç¢ã€‚
         /// </summary>
         /// <param name="start"></param>
         /// <param name="end"></param>
         /// <param name="unitSize"></param>
         /// <param name="movementFlags"></param>
-        /// <returns>µ±Ö±ÏßÄÚÃ»ÓĞ×è°­Ê±£¬·µ»Øtrue¡£</returns>
+        /// <returns>å½“ç›´çº¿å†…æ²¡æœ‰é˜»ç¢æ—¶ï¼Œè¿”å›trueã€‚</returns>
         internal bool LinecastCached(Vector2 start, Vector2 end, int unitSizeInBlock, BlockFlag movementFlags)
         {
             start.x = start.x / _toWorldScale - 0.5f * unitSizeInBlock + 0.5f;
@@ -593,7 +593,7 @@ namespace CNC.PathFinding
         }
 
         [Flags]
-        internal enum BlockFlag : byte
+        public enum BlockFlag : byte
         {
             None = 0,
             RestrictInfantry = 1,

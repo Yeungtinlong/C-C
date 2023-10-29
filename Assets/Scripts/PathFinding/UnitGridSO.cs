@@ -8,7 +8,7 @@ namespace CNC.PathFinding
     [CreateAssetMenu(fileName = "UnitGridSO", menuName = "Path Finding/Unit Grid")]
     public class UnitGridSO : ScriptableObject
     {
-        private List<PathDriver>[] _unitGrid;
+        private List<IPathDriver>[] _unitGrid;
         private int _unitGridCellWidth = 16;
         private int _unitGridWidth;
         private int _unitGridSize;
@@ -17,10 +17,10 @@ namespace CNC.PathFinding
         {
             _unitGridWidth = mapWidth / _unitGridCellWidth;
             _unitGridSize = _unitGridWidth * _unitGridWidth;
-            _unitGrid = new List<PathDriver>[_unitGridSize];
+            _unitGrid = new List<IPathDriver>[_unitGridSize];
             for (int i = 0; i < _unitGridSize; i++)
             {
-                _unitGrid[i] = new List<PathDriver>();
+                _unitGrid[i] = new List<IPathDriver>();
             }
         }
 
@@ -42,19 +42,19 @@ namespace CNC.PathFinding
             return new Vector2(x, z);
         }
 
-        public void RemoveFromIndex(int index, PathDriver driver)
+        public void RemoveFromIndex(int index, IPathDriver driver)
         {
             _unitGrid[index].Remove(driver);
         }
 
-        public void AddToIndex(int index, PathDriver driver)
+        public void AddToIndex(int index, IPathDriver driver)
         {
             _unitGrid[index].Add(driver);
         }
 
-        public List<PathDriver> GetUnitsInAround(Vector2 worldPoint, float radius)
+        public List<IPathDriver> GetUnitsInAround(Vector2 worldPoint, float radius)
         {
-            List<PathDriver> unitsInAround = new List<PathDriver>();
+            List<IPathDriver> unitsInAround = new List<IPathDriver>();
 
             int minX = Mathf.Max(Mathf.FloorToInt((worldPoint.x - radius) / _unitGridCellWidth), 0);
             int maxX = Mathf.Min(Mathf.CeilToInt((worldPoint.x + radius) / _unitGridCellWidth), _unitGridWidth - 1);
@@ -65,9 +65,9 @@ namespace CNC.PathFinding
             {
                 for (int j = minZ; j < maxZ; j++)
                 {
-                    foreach (PathDriver driver in _unitGrid[i + j * _unitGridWidth])
+                    foreach (IPathDriver driver in _unitGrid[i + j * _unitGridWidth])
                     {
-                        if (Utils.SqrDistance(PathDriver.TransformToWorldPoint(driver.transform.position), worldPoint) < Utils.Sqr(radius))
+                        if (Utils.SqrDistance(PathDriverUtils.TransformToWorldPoint(driver.Transform.position), worldPoint) < Utils.Sqr(radius))
                         {
                             unitsInAround.Add(driver);
                         }

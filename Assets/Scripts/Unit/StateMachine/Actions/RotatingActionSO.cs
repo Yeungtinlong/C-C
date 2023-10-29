@@ -11,13 +11,13 @@ public class RotatingActionSO : StateActionSO
 
 public class RotatingAction : StateAction
 {
-    private PathDriver _driver;
+    private IPathDriver _driver;
     private Controllable _controllable;
     private Transform _transform;
 
     public override void OnAwake(StateMachine stateMachine)
     {
-        _driver = stateMachine.GetComponent<PathDriver>();
+        _driver = stateMachine.GetComponent<IPathDriver>();
         _controllable = stateMachine.GetComponent<Controllable>();
         _transform = stateMachine.transform;
     }

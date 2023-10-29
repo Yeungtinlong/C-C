@@ -13,12 +13,12 @@ public class HasReachedConditionSO : StateConditionSO
 public class HasReachedCondition : Condition
 {
     private Controllable _controllable;
-    private PathDriver _driver;
+    private IPathDriver _driver;
 
     public override void OnAwake(StateMachine stateMachine)
     {
         _controllable = stateMachine.GetComponent<Controllable>();
-        _driver = stateMachine.GetComponent<PathDriver>();
+        _driver = stateMachine.GetComponent<IPathDriver>();
     }
 
     public override bool Statement()

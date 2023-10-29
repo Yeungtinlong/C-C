@@ -41,15 +41,15 @@ public class UnitProximitySO : ScriptableObject
         }
     }
 
-    public void AddUnitToIndex(int index, PathDriver unit)
+    public void AddUnitToIndex(int index, IPathDriver unit)
     {
-        UnitGridRecord record = new UnitGridRecord { RecordType = RecordType.PathDriver, PathDriver = unit };
+        UnitGridRecord record = new UnitGridRecord { RecordType = RecordType.IPathDriver, IPathDriver = unit };
         _proximityGrids[index].Add(record);
     }
 
-    public void RemoveUnitByGridIndex(int index, PathDriver unit)
+    public void RemoveUnitByGridIndex(int index, IPathDriver unit)
     {
-        _proximityGrids[index].Remove(new UnitGridRecord { RecordType = RecordType.PathDriver, PathDriver = unit });
+        _proximityGrids[index].Remove(new UnitGridRecord { RecordType = RecordType.IPathDriver, IPathDriver = unit });
     }
 
     public bool TryGetGridIndexFromTransformPosition(Vector3 transformPosition, out int gridIndex)
@@ -72,7 +72,7 @@ public class UnitProximitySO : ScriptableObject
         return gridIndex >= 0 && gridIndex < _proximityGridSize;
     }
 
-    public List<PathDriver> GetProximityUnits(PathDriver pathDriver, Vector3 transformPoint, float detectionRange)
+    public List<IPathDriver> GetProximityUnits(IPathDriver pathDriver, Vector3 transformPoint, float detectionRange)
     {
         Vector2 worldPoint = new Vector2(transformPoint.x, transformPoint.z);
         int minX = Mathf.Max(Mathf.FloorToInt((worldPoint.x - detectionRange) / _proximityGridCellWidth), 0);
@@ -81,7 +81,7 @@ public class UnitProximitySO : ScriptableObject
         int maxZ = Mathf.Min(Mathf.CeilToInt((worldPoint.y + detectionRange) / _proximityGridCellWidth), _proximityGridWidth);
         float sqrDetectionRange = Utils.Sqr(detectionRange);
 
-        List<PathDriver> proximityUnits = new List<PathDriver>();
+        List<IPathDriver> proximityUnits = new List<IPathDriver>();
 
         for (int x = minX; x < maxX; x++)
         {
@@ -90,10 +90,10 @@ public class UnitProximitySO : ScriptableObject
                 List<UnitGridRecord> unitGridRecords = _proximityGrids[x + z * _proximityGridWidth];
                 foreach (UnitGridRecord unitGridRecord in unitGridRecords)
                 {
-                    PathDriver driver = unitGridRecord.PathDriver;
+                    IPathDriver driver = unitGridRecord.IPathDriver;
                     if (driver != null && driver != pathDriver)
                     {
-                        Vector2 otherPoint = new Vector2(driver.transform.position.x, driver.transform.position.z);
+                        Vector2 otherPoint = new Vector2(driver.Transform.position.x, driver.Transform.position.z);
                         float sqrDistance = (otherPoint - worldPoint).sqrMagnitude;
                         if (sqrDistance < sqrDetectionRange)
                         {
@@ -110,12 +110,12 @@ public class UnitProximitySO : ScriptableObject
     public struct UnitGridRecord
     {
         public RecordType RecordType { get; set; }
-        public PathDriver PathDriver { get; set; }
+        public IPathDriver IPathDriver { get; set; }
     }
 
     public enum RecordType
     {
-        PathDriver,
-        PatrolPoint // Ñ²Âßµã£¬ÔÝÊ±ÎÞÓÃ
+        IPathDriver,
+        PatrolPoint // å·¡é€»ç‚¹ï¼Œæš‚æ—¶æ— ç”¨
     }
 }

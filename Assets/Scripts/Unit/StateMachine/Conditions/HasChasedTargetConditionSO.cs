@@ -14,14 +14,14 @@ public class HasChasedTargetCondition : Condition
     private Transform _transform = default;
     private Controllable _controllable = default;
     private Attacker _attacker = default;
-    private PathDriver _driver = default;
+    private IPathDriver _driver = default;
 
     public override void OnAwake(StateMachine stateMachine)
     {
         _transform = stateMachine.transform;
         _controllable = stateMachine.GetComponent<Controllable>();
         _attacker = stateMachine.GetComponent<Attacker>();
-        _driver = stateMachine.GetComponent<PathDriver>();
+        _driver = stateMachine.GetComponent<IPathDriver>();
     }
 
     public override bool Statement()

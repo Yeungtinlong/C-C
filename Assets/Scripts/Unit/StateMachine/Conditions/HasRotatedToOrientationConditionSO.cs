@@ -17,13 +17,13 @@ public class HasRotatedToOrientationCondition : Condition
 
     private Transform _transform;
     private Controllable _controllable;
-    private PathDriver _driver;
+    private IPathDriver _driver;
 
     public override void OnAwake(StateMachine stateMachine)
     {
         _transform = stateMachine.transform;
         _controllable = stateMachine.GetComponent<Controllable>();
-        _driver = stateMachine.GetComponent<PathDriver>();
+        _driver = stateMachine.GetComponent<IPathDriver>();
     }
 
     public override bool Statement()

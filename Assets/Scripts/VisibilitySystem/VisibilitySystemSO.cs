@@ -77,7 +77,7 @@ public class VisibilitySystemSO : ScriptableObject
 
                 if (sightPoints != null)
                 {
-                    // ±éÀú¸Ãµ¥Î»ËùÓĞ sightPoint£¬ÕÒ³ö¸÷ sightPoint Î»ÖÃºÍÊÓ¾à¡£
+                    // éå†è¯¥å•ä½æ‰€æœ‰ sightPointï¼Œæ‰¾å‡ºå„ sightPoint ä½ç½®å’Œè§†è·ã€‚
                     for (int i = 0; i < sightPoints.Length; i++)
                     {
                         Vector3 pos = sightPoints[i].Position;
@@ -86,7 +86,7 @@ public class VisibilitySystemSO : ScriptableObject
                         int x = (int) (pos.x * _visMapScale);
                         int z = (int) (pos.z * _visMapScale);
 
-                        // Èç¹û sightPoint µÄÎ»ÖÃÓë»º´æµÄ²»Ò»ÖÂ£¬¼´Î»ÖÃ·¢ÉúÁË¸Ä±ä£¬¾ÍĞèÒª¸üĞÂÊÓÒ°¡£
+                        // å¦‚æœ sightPoint çš„ä½ç½®ä¸ç¼“å­˜çš„ä¸ä¸€è‡´ï¼Œå³ä½ç½®å‘ç”Ÿäº†æ”¹å˜ï¼Œå°±éœ€è¦æ›´æ–°è§†é‡ã€‚
                         if (visCache.X != x || visCache.Y != z || visCache.Range != (int) sightRange)
                         {
                             DrawUnitToVisCacheWithOcclusion(visCache, new Vector2Int(x, z), sightRange, pos.y);
@@ -123,7 +123,7 @@ public class VisibilitySystemSO : ScriptableObject
 
         _subFrame++;
 
-        // Ã¿10Ö¡¸üĞÂÄ³Ò»¶ÓµÄÊÓÒ°¡£
+        // æ¯10å¸§æ›´æ–°æŸä¸€é˜Ÿçš„è§†é‡ã€‚
         if (_subFrame == UPDATE_FRAMES)
         {
             Utils.Swap(ref _currentVisMap, ref _teamVisMaps[(int) _currentUpdateFaction]);
@@ -214,13 +214,13 @@ public class VisibilitySystemSO : ScriptableObject
         int xStartInMap = visCache.X - range;
         int yStartInMap = visCache.Y - range;
 
-        // ÅĞ¶Ï»º´æÊÓÒ°µÄÓÒ±ß½çÊÇ·ñ´óÓÚµØÍ¼±ß½ç¡£
+        // åˆ¤æ–­ç¼“å­˜è§†é‡çš„å³è¾¹ç•Œæ˜¯å¦å¤§äºåœ°å›¾è¾¹ç•Œã€‚
         if (xStartInMap + xEndCache > _visMapWidth)
         {
             xEndCache -= xStartInMap + xEndCache - _visMapWidth;
         }
 
-        // ÅĞ¶Ï»º´æÊÓÒ°µÄ×ó±ß½çÊÇ·ñĞ¡ÓÚµØÍ¼±ß½ç¡£
+        // åˆ¤æ–­ç¼“å­˜è§†é‡çš„å·¦è¾¹ç•Œæ˜¯å¦å°äºåœ°å›¾è¾¹ç•Œã€‚
         if (xStartInMap < 0)
         {
             int overflow = -xStartInMap;
@@ -263,7 +263,7 @@ public class VisibilitySystemSO : ScriptableObject
     }
 
     /// <summary>
-    /// ¾­¹ıÊÓ×¶ÌåÌŞ³ıºó£¬½«µ¥Î»Ìí¼Ó½ø¿ÉÊÓ·¶Î§»º´æÖĞ¡£
+    /// ç»è¿‡è§†é”¥ä½“å‰”é™¤åï¼Œå°†å•ä½æ·»åŠ è¿›å¯è§†èŒƒå›´ç¼“å­˜ä¸­ã€‚
     /// </summary>
     /// <param name="visCache"></param>
     /// <param name="blockPoint"></param>
@@ -273,8 +273,8 @@ public class VisibilitySystemSO : ScriptableObject
         float viewHeight)
     {
         int blockRange = (int) range;
-        int cacheWidth = 2 * blockRange + 1; // ÒÔ×ÔÉíÎªÖĞµã£¬Ç°ºó¼ÓÉÏ¾àÀë×÷ÎªÊÓÒ°·½ĞÎµÄ±ß³¤¡£
-        int cacheSize = cacheWidth * cacheWidth; // ÊÓÒ°·½ĞÎµÄÃæ»ı¡£
+        int cacheWidth = 2 * blockRange + 1; // ä»¥è‡ªèº«ä¸ºä¸­ç‚¹ï¼Œå‰ååŠ ä¸Šè·ç¦»ä½œä¸ºè§†é‡æ–¹å½¢çš„è¾¹é•¿ã€‚
+        int cacheSize = cacheWidth * cacheWidth; // è§†é‡æ–¹å½¢çš„é¢ç§¯ã€‚
 
         int unitX = blockPoint.x;
         int unitY = blockPoint.y;
@@ -305,7 +305,7 @@ public class VisibilitySystemSO : ScriptableObject
         int xCount = _visMapWidth - unitX - 1;
         int yCount = _visMapWidth - unitY - 1;
 
-        // ½« dest ÖĞµ¥Î»ËùÔÚµÄµãÉèÎª255¿É¼û£¬dest ¼ÆËãÍê±Ïºó½«»á¸²¸Çµ½ visCache¡£
+        // å°† dest ä¸­å•ä½æ‰€åœ¨çš„ç‚¹è®¾ä¸º255å¯è§ï¼Œdest è®¡ç®—å®Œæ¯•åå°†ä¼šè¦†ç›–åˆ° visCacheã€‚
         unitVisDrawer.Dest[destPos] = byte.MaxValue;
 
         unitVisDrawer.DrawPieSlice(srcPos, 1, _visMapWidth, xCount, yCount, destPos, 1, cacheWidth);
@@ -358,8 +358,8 @@ public class VisibilitySystemSO : ScriptableObject
             {
                 int xCount = Mathf.Min(Mathf.Min(i, (int) Mathf.Sqrt(Range * Range - i * i)), xLimit);
 
-                // Ë¥¼õÏµÊı£ºÔÚ i==2 Ê±×î´ó£¬Îª2£¬Ëæ i µÄÔö³¤£¬Öµ½Ó½ü1£¬Ä£ÄâÍ¸ÊÓ½ü´óÔ¶Ğ¡µÄÓ°Ïì¡£
-                // ±ØĞë×¢Òâ£¬ÔÚ×öÕûÊı³ı·¨Ê±±ØĞë×ªÎª¸¡µãÊı£¬·ñÔòµÃµ½µÄ½á¹û»á¶ªÊ§ËùÓĞĞ¡Êı¡£
+                // è¡°å‡ç³»æ•°ï¼šåœ¨ i==2 æ—¶æœ€å¤§ï¼Œä¸º2ï¼Œéš i çš„å¢é•¿ï¼Œå€¼æ¥è¿‘1ï¼Œæ¨¡æ‹Ÿé€è§†è¿‘å¤§è¿œå°çš„å½±å“ã€‚
+                // å¿…é¡»æ³¨æ„ï¼Œåœ¨åšæ•´æ•°é™¤æ³•æ—¶å¿…é¡»è½¬ä¸ºæµ®ç‚¹æ•°ï¼Œå¦åˆ™å¾—åˆ°çš„ç»“æœä¼šä¸¢å¤±æ‰€æœ‰å°æ•°ã€‚
                 float attenuationScale = (float) i / (float) (i - 1);
                 float reciprocalOfI = 1f / i;
 
@@ -368,14 +368,14 @@ public class VisibilitySystemSO : ScriptableObject
                 destPos += destYStep;
                 int targetPosInDest = destPos + xCount * destXStep;
 
-                // É¨ÃèÉÈĞÎ·¶Î§µÄµã£¬j ÊÇÔÚ x ·½ÏòµÄÆ«ÒÆ¡£
+                // æ‰«ææ‰‡å½¢èŒƒå›´çš„ç‚¹ï¼Œj æ˜¯åœ¨ x æ–¹å‘çš„åç§»ã€‚
                 for (int j = xCount; j > 0; j--)
                 {
-                    // ±»¹Û²ìµãµÄ¸ß¶È£¬¼õÈ¥¹Û²ìÕß¸ß¶È£¬ÕÛËãÎªµØÆ½Ïß¿´³ö¡£
+                    // è¢«è§‚å¯Ÿç‚¹çš„é«˜åº¦ï¼Œå‡å»è§‚å¯Ÿè€…é«˜åº¦ï¼ŒæŠ˜ç®—ä¸ºåœ°å¹³çº¿çœ‹å‡ºã€‚
                     float targetHeight = SrcHeight[targetPos] - ViewHeight;
                     float lerpT = j * reciprocalOfI;
 
-                    // ²åÖµËã³öÕÚµ²Îï¸ß¶È¡£
+                    // æ’å€¼ç®—å‡ºé®æŒ¡ç‰©é«˜åº¦ã€‚
                     float obstacleHeight = Mathf.LerpUnclamped(Horizon[j], Horizon[j - 1], lerpT);
                     float densityScale = Mathf.LerpUnclamped(Density[j], Density[j - 1], lerpT);
                     float sqrDistance = i * i + j * j;
@@ -383,16 +383,16 @@ public class VisibilitySystemSO : ScriptableObject
                     obstacleHeight *= attenuationScale;
                     densityScale = (densityScale * (i - 1) + SrcDensity[targetPos]) * reciprocalOfI;
 
-                    // Ìõ¼ş1£ºÊÓÒ°¸ß¶È±ÈÄ¿±ê¸ß£»
-                    // Ìõ¼ş2£ºÕÛËã¿ÕÆø»ë×Ç¶Èºó£¬Ä¿±êÔÚÊÓÒ°·¶Î§ÄÚ£»
-                    // Âú×ãÉÏÊöÌõ¼ş£¬Ä¿±ê¿É¼û£¬ÉèÖµÎª255¡£
+                    // æ¡ä»¶1ï¼šè§†é‡é«˜åº¦æ¯”ç›®æ ‡é«˜ï¼›
+                    // æ¡ä»¶2ï¼šæŠ˜ç®—ç©ºæ°”æµ‘æµŠåº¦åï¼Œç›®æ ‡åœ¨è§†é‡èŒƒå›´å†…ï¼›
+                    // æ»¡è¶³ä¸Šè¿°æ¡ä»¶ï¼Œç›®æ ‡å¯è§ï¼Œè®¾å€¼ä¸º255ã€‚
                     if (obstacleHeight < targetHeight + TARGET_UNIT_HEIGHT &&
                         sqrDistance * densityScale * densityScale < Range * Range)
                     {
                         Dest[targetPosInDest] = byte.MaxValue;
                     }
 
-                    // Èç¹ûÄ¿±êµã¸ß¶È±È½Ï¸ß£¬ÄÇÃ´Ä¿±êµã³ÉÎªĞÂµÄÕÚµ²µã¡£
+                    // å¦‚æœç›®æ ‡ç‚¹é«˜åº¦æ¯”è¾ƒé«˜ï¼Œé‚£ä¹ˆç›®æ ‡ç‚¹æˆä¸ºæ–°çš„é®æŒ¡ç‚¹ã€‚
                     Horizon[j] = Mathf.Max(obstacleHeight, targetHeight);
                     Density[j] = densityScale;
 
@@ -400,9 +400,9 @@ public class VisibilitySystemSO : ScriptableObject
                     targetPosInDest -= destXStep;
                 }
 
-                // É¨ÃèÖ±Ïß·½Ïò£¬y·½ÏòµÄµã¡£
+                // æ‰«æç›´çº¿æ–¹å‘ï¼Œyæ–¹å‘çš„ç‚¹ã€‚
 
-                // ´ËÊ±viewPosÔÚ y ÖáÉÏ¡£
+                // æ­¤æ—¶viewPosåœ¨ y è½´ä¸Šã€‚
                 float straightTargetHeight = SrcHeight[targetPos] - ViewHeight;
                 float straightObstacleHeight = Horizon[0];
                 float straightDensityScale = Density[0];

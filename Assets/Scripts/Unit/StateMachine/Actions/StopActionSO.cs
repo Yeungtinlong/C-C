@@ -11,12 +11,12 @@ public class StopActionSO : StateActionSO
 
 public class StopAction : StateAction
 {
-    private PathDriver _driver = default;
+    private IPathDriver _driver = default;
     private Controllable _controllable = default;
 
     public override void OnAwake(StateMachine stateMachine)
     {
-        _driver = stateMachine.GetComponent<PathDriver>();
+        _driver = stateMachine.GetComponent<IPathDriver>();
         _controllable = stateMachine.GetComponent<Controllable>();
     }
 

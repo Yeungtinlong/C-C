@@ -18,17 +18,19 @@ public class ChasingAction : StateAction
     private ChasingActionSO _origin => OriginSO as ChasingActionSO;
     private Controllable _controllable;
     private Attacker _attacker;
-    private PathDriver _driver;
+    private IPathDriver _driver;
     private Animator _animator;
 
     public override void OnAwake(StateMachine stateMachine)
     {
         _controllable = stateMachine.GetComponent<Controllable>();
         _attacker = stateMachine.GetComponent<Attacker>();
-        _driver = stateMachine.GetComponent<PathDriver>();
-        _animator = stateMachine.GetComponent<Animator>();
+        _driver = stateMachine.GetComponent<IPathDriver>();
+        _animator = stateMachine.TryGetComponent(out _animator)
+            ? _animator
+            : stateMachine.GetComponent<AnimatorController>().ManualAnimator;
     }
-    
+
     public override void OnUpdate()
     {
         if (_controllable.TryGetCurrentCommand(out Command command))
@@ -37,7 +39,7 @@ public class ChasingAction : StateAction
             {
                 if (command.Target == null)
                     return;
-                
+
                 _driver.SetDestination(command.Destination, command.TargetAlignment, false,
                     _attacker.ChaseDistance - _origin.ChaseThreshold);
 
@@ -45,7 +47,7 @@ public class ChasingAction : StateAction
             }
         }
     }
-    
+
     public override void OnStateExit()
     {
         if (_controllable.TryGetCurrentCommand(out Command command))

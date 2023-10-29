@@ -1,9 +1,8 @@
-using static CNC.PathFinding.PathDriver;
 using UnityEngine;
 
 namespace CNC.PathFinding
 {
-    internal class DriverProxy
+    public class DriverProxy
     {
         private Vector2 _position;
 

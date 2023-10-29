@@ -17,7 +17,7 @@ public class FaceToEnemyAction : StateAction
     private Transform _transform = default;
     private Attacker _attacker = default;
     private Controllable _controllable = default;
-    private PathDriver _pathDriver = default;
+    private IPathDriver _pathDriver = default;
 
     FaceToEnemyActionSO _originSO => (FaceToEnemyActionSO)OriginSO;
 
@@ -26,7 +26,7 @@ public class FaceToEnemyAction : StateAction
         _transform = stateMachine.transform;
         _attacker = stateMachine.GetComponent<Attacker>();
         _controllable = stateMachine.GetComponent<Controllable>();
-        _pathDriver = stateMachine.GetComponent<PathDriver>();
+        _pathDriver = stateMachine.GetComponent<IPathDriver>();
     }
 
     public override void OnUpdate()

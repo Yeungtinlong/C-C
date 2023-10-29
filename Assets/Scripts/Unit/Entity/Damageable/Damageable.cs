@@ -30,6 +30,7 @@ public class Damageable : MonoBehaviour
     public bool IsGettingHit { get; set; } = false;
     public bool IsLowHealth => _isLowHealth;
     public bool IsDead { get; set; } = false;
+    public bool IsDestroyed { get; set; } = false;
 
     public event UnityAction<Damageable> OnDie;
 

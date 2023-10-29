@@ -7,10 +7,10 @@ using UnityEngine.AI;
 public class Human : MonoBehaviour
 {
     [SerializeField] private HumanConfigSO _humanConfigSO = default;
-    [Tooltip("Define the man how long will stand automatically after getting hit.")]
+    [Tooltip("Define the man how long will stand up automatically after getting hit.")]
     [SerializeField] private float _automaticallyStandDuration = default;
 
-    private PathDriver _driver;
+    private IPathDriver _driver;
     private Damageable _damageable;
     private Controllable _controllable;
     private float _lastLayTime;
@@ -25,7 +25,7 @@ public class Human : MonoBehaviour
 
     private void Awake()
     {
-        _driver = GetComponent<PathDriver>();
+        _driver = GetComponent<IPathDriver>();
         _damageable = GetComponent<Damageable>();
         _controllable = GetComponent<Controllable>();
         SetupHumanConfig();
