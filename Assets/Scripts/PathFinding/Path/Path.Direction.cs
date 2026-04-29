@@ -5,7 +5,7 @@ namespace CNC.PathFinding
     public partial class Path
     {
         [Flags]
-        internal enum Direction : byte
+        public enum Direction : byte
         {
             None = 0,
             Left = 1,

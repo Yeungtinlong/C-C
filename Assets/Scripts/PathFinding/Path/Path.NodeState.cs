@@ -2,7 +2,7 @@ namespace CNC.PathFinding
 {
     public partial class Path
     {
-        internal enum NodeState
+        public enum NodeState
         {
             Unvisited,
             Walkable,

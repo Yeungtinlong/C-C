@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 7
+  version: 10
 --- !u!114 &-2000584407339169687
 MonoBehaviour:
   m_ObjectHideFlags: 11
@@ -190,7 +190,7 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - _BaseColor: {r: 0.39215678, g: 0.78431374, b: 0.490196, a: 0.49019608}
-    - _Color: {r: 0.39215675, g: 0.78431374, b: 0.490196, a: 0.49019608}
+    - _Color: {r: 0.39215675, g: 0.7843137, b: 0.490196, a: 0.49019608}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 4, b: 0, a: 1}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
@@ -199,3 +199,4 @@ Material:
     - _UnlitColor: {r: 1, g: 1, b: 1, a: 0.078431375}
     - _UnlitColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

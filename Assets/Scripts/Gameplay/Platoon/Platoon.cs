@@ -22,7 +22,7 @@ public class Platoon : IGroupAbility
     private Vector3 _platoonCenter;
     private float _radiusSqr;
     private float _sumOfUnitSize;
-    private BlockMapSO _blockMap;
+    private IBlockMapManager _blockMap;
 
     private float _maxAccelerate;
     private float _maxSpeed;
@@ -40,13 +40,13 @@ public class Platoon : IGroupAbility
     // public UnityAction OnCommandFinished;
     // public UnityAction OnDismiss;
 
-    public Platoon(List<Controllable> platoonUnits, BlockMapSO blockMap)
+    public Platoon(List<Controllable> platoonUnits, IBlockMapManager blockMap)
     {
         InitializePlatoon(platoonUnits);
         _blockMap = blockMap;
     }
 
-    public Platoon(Controllable platoonUnit, BlockMapSO blockMap)
+    public Platoon(Controllable platoonUnit, IBlockMapManager blockMap)
     {
         _platoonUnits.Add(platoonUnit);
         RecalculateAbility();
@@ -187,7 +187,7 @@ public class Platoon : IGroupAbility
                 if (soldiers.Count > 0)
                 {
                     List<Controllable> layingSoldiers = soldiers.FindAll(u => u.GetComponent<Human>().IsLaying);
-                    // ½öÈÃLayingµÄµ¥Î»Stand¡£
+                    // ï¿½ï¿½ï¿½ï¿½Layingï¿½Äµï¿½Î»Standï¿½ï¿½
                     if (layingSoldiers.Count > 0)
                     {
                         foreach (Controllable layingSoldier in layingSoldiers)
@@ -239,19 +239,19 @@ public class Platoon : IGroupAbility
     public void GetFormationPositions(Vector3 centerOfFirstLine, Vector3 alignment,
         FormationType formationType = FormationType.SoldierFirst)
     {
-        // ÓÃÕâ¸öÏòÁ¿È·¶¨Ô²ÐÎ²¼ÕóµÄ0µã·½ÏòÎ»ÖÃ
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½Ô²ï¿½Î²ï¿½ï¿½ï¿½ï¿½0ï¿½ã·½ï¿½ï¿½Î»ï¿½ï¿½
         // orientation = (targetPoint - centerOfFirstLine).normalized;
         float offsetDegree = Vector3.Cross(alignment, Vector3.forward).y > 0f
             ? Vector3.Angle(alignment, Vector3.forward)
             : -Vector3.Angle(alignment, Vector3.forward);
 
-        // ±£´æ¼ÆËã³öµÄËùÓÐ×ø±ê½á¹û£¬ÓÃÓÚ·µ»Ø
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú·ï¿½ï¿½ï¿½
         // var resultDestinations = new List<Vector3>();
-        // ÈÝÁ¿±íÊ¾¹²ÓÐ¶àÉÙÖÖ°ë¾¶£¬ÔªËØÖµ±íÊ¾¸ÃÖÖ°ë¾¶µÄ´óÐ¡
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½Ö°ë¾¶ï¿½ï¿½Ôªï¿½ï¿½Öµï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ö°ë¾¶ï¿½Ä´ï¿½Ð¡
         var radiusList = new List<int>();
-        // ÈÝÁ¿±íÊ¾¹²ÓÐ¶àÉÙÖÖ°ë¾¶£¬ÔªËØÖµ±íÊ¾¸ÃÖÖ°ë¾¶ÓÐ¶àÉÙ¸ö
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½Ö°ë¾¶ï¿½ï¿½Ôªï¿½ï¿½Öµï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ö°ë¾¶ï¿½Ð¶ï¿½ï¿½Ù¸ï¿½
         var radiusCountList = new List<int>();
-        // ÉýÐòÅÅÁÐ
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         if (formationType == FormationType.SoldierFirst)
             _members = _members.OrderBy(t => t.Unit.UnitSizeInWorld).ToList();
         else
@@ -259,8 +259,8 @@ public class Platoon : IGroupAbility
 
         // float averageRadius = 0f;
         
-        // ¼ÇÂ¼ÓÐ¶àÉÙÖÖagent°ë¾¶£¬ÓÐ¶àÉÙÖÖ¾ÍÅÅ¶àÉÙ¸öÔ²Õó
-        // iÊÇµ¥Î»×ÜÊýË÷Òý£¬jÊÇ°ë¾¶ÖÖÀàË÷Òý
+        // ï¿½ï¿½Â¼ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½agentï¿½ë¾¶ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½Å¶ï¿½ï¿½Ù¸ï¿½Ô²ï¿½ï¿½
+        // iï¿½Çµï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½jï¿½Ç°ë¾¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         for (int i = 0, j = 0; i < _members.Count && j < _members.Count; i++)
         {
             int unitSizeInWorld = _members[i].Unit.UnitSizeInWorld;
@@ -268,7 +268,7 @@ public class Platoon : IGroupAbility
             if (i == 0)
             {
                 radiusList.Add(unitSizeInWorld);
-                radiusCountList.Add(1); // ÔÚµÚ0ÖÖ°ë¾¶ÓÐÒ»¸ö
+                radiusCountList.Add(1); // ï¿½Úµï¿½0ï¿½Ö°ë¾¶ï¿½ï¿½Ò»ï¿½ï¿½
                 // averageRadius += unitSizeInWorld;
             }
             else
@@ -348,10 +348,10 @@ public class Platoon : IGroupAbility
                 //     float basicOffset = 4f;
                 //     float circleRadiusOffset = 8f;
                 //
-                //     // Éú³É¶à¸öÔ²È¦£¬È·¶¨Ã¿¸öµ¥Î»Î»ÖÃ
+                //     // ï¿½ï¿½ï¿½É¶ï¿½ï¿½Ô²È¦ï¿½ï¿½È·ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½Î»Î»ï¿½ï¿½
                 //     for (int i = 0; i < radiusCountList.Count; i++)
                 //     {
-                //         // jÊÇÈ¦ÄÚµ¥Î»Ë÷Òý£¬iÊÇÈ¦Ê÷Ë÷Òý
+                //         // jï¿½ï¿½È¦ï¿½Úµï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½iï¿½ï¿½È¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 //         for (int j = 0; j < radiusCountList[i]; j++)
                 //         {
                 //             float angle = j * (360f / radiusCountList[i]) + offsetDegree;
@@ -373,7 +373,7 @@ public class Platoon : IGroupAbility
     }
 
     /// <summary>
-    /// Ö±½ÓÏÂ´ïÒÆ¶¯Ö¸Áî£¬¼ÆËã¸÷µ¥Î»Î»ÖÃ¡£
+    /// Ö±ï¿½ï¿½ï¿½Â´ï¿½ï¿½Æ¶ï¿½Ö¸ï¿½î£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»Î»ï¿½Ã¡ï¿½
     /// </summary>
     public void CreateMoveCommand(Command command)
     {
@@ -387,7 +387,7 @@ public class Platoon : IGroupAbility
         {
             if (CheckMemberValid(_members[i]))
             {
-                BlockMapSO.BlockFlag movementMask = Path.GetMovementFlags(_members[i].Unit.Damageable.UnitType);
+                BlockFlag movementMask = Path.GetMovementFlags(_members[i].Unit.Damageable.UnitType);
                 int unitSizeInWorld = _members[i].Unit.UnitSizeInWorld;
                 unitSizeInWorld = Mathf.Min(5, unitSizeInWorld + 1);
 
@@ -396,7 +396,7 @@ public class Platoon : IGroupAbility
                     movementMask);
 
                 _blockMap.MarkBlockMap(new Vector2(destination.x, destination.z), unitSizeInWorld,
-                    BlockMapSO.BlockFlag.Dynamic);
+                    BlockFlag.Dynamic);
 
                 _members[i].PrecalculatedCommand.Destination = destination;
             }
@@ -410,7 +410,7 @@ public class Platoon : IGroupAbility
                 int unitSizeInWorld = _members[i].Unit.UnitSizeInWorld;
                 unitSizeInWorld = Mathf.Min(5, unitSizeInWorld + 1);
 
-                _blockMap.UnmarkBlockMap(new Vector2(dest.x, dest.z), unitSizeInWorld, BlockMapSO.BlockFlag.Dynamic);
+                _blockMap.UnmarkBlockMap(new Vector2(dest.x, dest.z), unitSizeInWorld, BlockFlag.Dynamic);
             }
         }
     }
@@ -424,7 +424,7 @@ public class Platoon : IGroupAbility
         {
             if (CheckMemberValid(_members[i]))
             {
-                BlockMapSO.BlockFlag movementMask = Path.GetMovementFlags(_members[i].Unit.Damageable.UnitType);
+                BlockFlag movementMask = Path.GetMovementFlags(_members[i].Unit.Damageable.UnitType);
                 int unitSizeInWorld = _members[i].Unit.UnitSizeInWorld;
                 unitSizeInWorld = Mathf.Min(5, unitSizeInWorld + 1);
 
@@ -432,7 +432,7 @@ public class Platoon : IGroupAbility
                 destination = FindNearestValidFormationPoint(destination, unitSizeInWorld, movementMask);
 
                 _blockMap.MarkBlockMap(new Vector2(destination.x, destination.z), unitSizeInWorld,
-                    BlockMapSO.BlockFlag.Dynamic);
+                    BlockFlag.Dynamic);
 
                 _members[i].PrecalculatedCommand.Destination = destination;
             }
@@ -446,7 +446,7 @@ public class Platoon : IGroupAbility
                 int unitSizeInWorld = _members[i].Unit.UnitSizeInWorld;
                 unitSizeInWorld = Mathf.Min(5, unitSizeInWorld + 1);
 
-                _blockMap.UnmarkBlockMap(new Vector2(dest.x, dest.z), unitSizeInWorld, BlockMapSO.BlockFlag.Dynamic);
+                _blockMap.UnmarkBlockMap(new Vector2(dest.x, dest.z), unitSizeInWorld, BlockFlag.Dynamic);
             }
         }
         
@@ -465,7 +465,7 @@ public class Platoon : IGroupAbility
     }
     
     private Vector3 FindNearestValidFormationPoint(Vector3 from, Vector3 to, int unitSizeInWorld,
-        BlockMapSO.BlockFlag movementMask)
+        BlockFlag movementMask)
     {
         Path path = new Path(_blockMap);
         Vector3 targetPoint = path.ProjectToNearestValidPoint(from, to, unitSizeInWorld, movementMask);
@@ -475,7 +475,7 @@ public class Platoon : IGroupAbility
     }
 
     private Vector3 FindNearestValidFormationPoint(Vector3 position, int unitSizeInWorld,
-        BlockMapSO.BlockFlag movementMask)
+        BlockFlag movementMask)
     {
         Path path = new Path(_blockMap);
         return path.FindNearestValidPoint(position, unitSizeInWorld, movementMask);
@@ -495,7 +495,7 @@ public class Platoon : IGroupAbility
             {
                 if (_members[i].DistSqr > _radiusSqr)
                 {
-                    // µÃµ½ÔÚºÏÀí·¶Î§ÄÚµÄ×î´óÖðµ¥Î»Æ«ÒÆ°ë¾¶¡£
+                    // ï¿½Ãµï¿½ï¿½Úºï¿½ï¿½ï¿½ï¿½ï¿½Î§ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»Æ«ï¿½Æ°ë¾¶ï¿½ï¿½
                     _radiusSqr = _members[i].DistSqr;
                 }
 

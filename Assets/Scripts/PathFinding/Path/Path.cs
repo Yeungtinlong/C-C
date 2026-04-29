@@ -1,14 +1,14 @@
 using CNC.Utility;
 using System.Collections.Generic;
 using UnityEngine;
-using static CNC.PathFinding.BlockMapSO;
+using static CNC.PathFinding.BlockMapManagerInternal;
 
 namespace CNC.PathFinding
 {
     public partial class Path
     {
         private int _unitSizeInBlock;
-        private BlockMapSO _blockMap;
+        private IBlockMapManager _blockMap;
         private PathResult _result;
         private BlockFlag _movementMask;
         private List<Vector2> _vectorPath = new List<Vector2>();
@@ -23,7 +23,7 @@ namespace CNC.PathFinding
         public List<Vector2> VectorPath => _vectorPath;
         public PathResult Result => _result;
 
-        internal Path(BlockMapSO blockMap)
+        internal Path(IBlockMapManager blockMap)
         {
             _blockMap = blockMap;
         }

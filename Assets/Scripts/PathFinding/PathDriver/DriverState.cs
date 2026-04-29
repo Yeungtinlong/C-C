@@ -2,11 +2,11 @@ namespace CNC.PathFinding
 {
     public struct DriverState
     {
-        internal DriverInfo DriverInfo { get; set; }
-        internal float ProxySpeed { get; set; }
-        internal float ProxyAcceleration { get; set; }
-        internal bool IsBraking { get; set; }
-        internal bool IsGiveUp { get; set; }
-        internal ArrivalState ArrivalState { get; set; }
+        public DriverInfo DriverInfo { get; set; }
+        public float ProxySpeed { get; set; }
+        public float ProxyAcceleration { get; set; }
+        public bool IsBraking { get; set; }
+        public bool IsGiveUp { get; set; }
+        public ArrivalState ArrivalState { get; set; }
     }
 }

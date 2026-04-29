@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static CNC.PathFinding.BlockMapSO;
 using static CNC.PathFinding.Path;
 
 namespace CNC.PathFinding
@@ -9,7 +7,7 @@ namespace CNC.PathFinding
     internal class AStarPathGenerator : IPathGenerator
     {
         private readonly IPathDriver _driver;
-        private readonly BlockMapSO _blockMap;
+        private readonly IBlockMapManager _blockMap;
         private bool _isPathValid;
         private PathResult _pathResult;
         private List<Vector2> _currentPath;
@@ -18,7 +16,7 @@ namespace CNC.PathFinding
         public PathResult PathResult => _pathResult;
         public List<Vector2> CurrentPath => _currentPath;
 
-        internal AStarPathGenerator(IPathDriver driver, BlockMapSO blockMap)
+        internal AStarPathGenerator(IPathDriver driver, IBlockMapManager blockMap)
         {
             _driver = driver;
             _blockMap = blockMap;

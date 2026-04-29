@@ -17,22 +17,21 @@ Shader "Custom/SSOutlineShader"
             Name "Get Mask"
 
             ZTest Always
-            ZWrite On
+            ZWrite Off
 
             HLSLPROGRAM
-            #pragma vertex vert
-            #pragma fragment frag
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+#pragma vertex vert
+#pragma fragment frag
 
-            TEXTURE2D(_MainTex);
-            SAMPLER(sampler_MainTex);
+            // TEXTURE2D(_MainTex);
+            // SAMPLER(sampler_MainTex);
 
-            struct VertexInput
-            {
+            struct VertexInput {
                 float4 positionOS : POSITION;
             };
 
-            struct VertexOutput
-            {
+            struct VertexOutput {
                 float4 positionCS : SV_POSITION;
             };
 
@@ -40,13 +39,12 @@ Shader "Custom/SSOutlineShader"
             {
                 VertexOutput o;
                 o.positionCS = TransformObjectToHClip(i.positionOS.xyz);
-
                 return o;
             }
 
             float4 frag(VertexOutput i) : SV_TARGET
             {
-                return 1;
+                return float4(1, 1, 1, 1);
             }
             ENDHLSL
         }
@@ -60,14 +58,16 @@ Shader "Custom/SSOutlineShader"
             ZWrite Off
 
             HLSLPROGRAM
-            #pragma vertex vert
-            #pragma fragment frag
-            
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+#include "Packages/com.unity.render-pipelines.core/Runtime/Utilities/Blit.hlsl"
+#pragma vertex Vert
+#pragma fragment frag
+
             float _OcclusionUVScale;
             float4 _OcclusionColor;
 
-            TEXTURE2D(_MainTex);
-            SAMPLER(sampler_MainTex);
+            TEXTURE2D(_SrcTex);
+            SAMPLER(sampler_SrcTex);
 
             TEXTURE2D(_OcclusionTexture);
             SAMPLER(sampler_OcclusionTexture);
@@ -75,32 +75,31 @@ Shader "Custom/SSOutlineShader"
             TEXTURE2D(_Mask);
             SAMPLER(sampler_Mask);
 
-            struct VertexInput
-            {
-                float4 positionOS : POSITION;
-                float2 uv : TEXCOORD0;
-            };
+            // struct VertexInput
+            // {
+            //     float4 positionOS : POSITION;
+            //     float2 uv : TEXCOORD0;
+            // };
 
-            struct VertexOutput
-            {
-                float4 positionCS : SV_POSITION;
-                float2 uv : TEXCOORD0;
-            };
+            // struct VertexOutput
+            // {
+            //     float4 positionCS : SV_POSITION;
+            //     float2 uv : TEXCOORD0;
+            // };
 
-            VertexOutput vert(VertexInput i)
-            {
-                VertexOutput o;
-                o.positionCS = TransformObjectToHClip(i.positionOS.xyz);
-                o.uv = i.uv;
-                return o;
-            }
+            // VertexOutput vert(VertexInput i)
+            // {
+            //     VertexOutput o;
+            //     o.positionCS = TransformObjectToHClip(i.positionOS.xyz);
+            //     o.uv = i.uv;
+            //     return o;
+            // }
 
-            float4 frag(VertexOutput i) : SV_TARGET
+            float4 frag(Varyings i) : SV_TARGET
             {
-                float4 originColor = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.uv);
-                float mask = SAMPLE_TEXTURE2D(_Mask, sampler_Mask, i.uv).r;
-                float occlusionMask = SAMPLE_TEXTURE2D(_OcclusionTexture, sampler_OcclusionTexture,
-                                                       i.uv * _OcclusionUVScale).a;
+                float4 originColor = SAMPLE_TEXTURE2D(_SrcTex, sampler_SrcTex, i.texcoord);
+                float mask = SAMPLE_TEXTURE2D(_Mask, sampler_Mask, i.texcoord).r;
+                float occlusionMask = SAMPLE_TEXTURE2D(_OcclusionTexture, sampler_OcclusionTexture, i.texcoord * _OcclusionUVScale).a;
 
                 float4 occlusionAreaColor = mask * occlusionMask * _OcclusionColor;
                 return float4(lerp(originColor.rgb, occlusionAreaColor.rgb, occlusionAreaColor.a), 1);
@@ -112,55 +111,66 @@ Shader "Custom/SSOutlineShader"
         {
             //Pass2
             Name "Get Edge"
-
+            
             HLSLPROGRAM
-            #pragma vertex vert
-            #pragma fragment frag
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+#include "Packages/com.unity.render-pipelines.core/Runtime/Utilities/Blit.hlsl"
+#pragma vertex Vert
+#pragma fragment frag
+            
+            // struct VertexInput {
+            //     float4 position : POSITION;
+            //     float2 uv : TEXCOORD0;
+            // };
 
-            struct VertexInput
-            {
-                float4 position : POSITION;
-                float2 uv : TEXCOORD0;
-            };
+            // struct VertexOutput {
+            //     float4 position : SV_POSITION;
+            //     float2 uv[9] : TEXCOORD0;
+            // };
 
-            struct VertexOutput
-            {
-                float4 position : SV_POSITION;
-                float2 uv[9] : TEXCOORD0;
-            };
+            TEXTURE2D(_SrcTex);
+            SAMPLER(sampler_SrcTex);
 
             CBUFFER_START(UnityPerMaterial)
-            float2 _MainTex_TexelSize;
+                float2 _SrcTex_TexelSize;
             CBUFFER_END
 
             float _SampleDistance;
             float4 _OutlineColor;
             float _HDRIntensity;
 
-            TEXTURE2D(_MainTex);
-            SAMPLER(sampler_MainTex);
+            // VertexOutput vert(VertexInput i)
+            // {
+            //     VertexOutput o;
+            //
+            //     o.position = TransformObjectToHClip(i.position.xyz);
+            //
+            //     o.uv[0] = i.uv + _SrcTex_TexelSize * float2(-1, -1) * _SampleDistance;
+            //     o.uv[1] = i.uv + _SrcTex_TexelSize * float2(0, -1) * _SampleDistance;
+            //     o.uv[2] = i.uv + _SrcTex_TexelSize * float2(1, -1) * _SampleDistance;
+            //     o.uv[3] = i.uv + _SrcTex_TexelSize * float2(-1, 0) * _SampleDistance;
+            //     o.uv[4] = i.uv + _SrcTex_TexelSize * float2(0, 0) * _SampleDistance;
+            //     o.uv[5] = i.uv + _SrcTex_TexelSize * float2(1, 0) * _SampleDistance;
+            //     o.uv[6] = i.uv + _SrcTex_TexelSize * float2(-1, 1) * _SampleDistance;
+            //     o.uv[7] = i.uv + _SrcTex_TexelSize * float2(0, 1) * _SampleDistance;
+            //     o.uv[8] = i.uv + _SrcTex_TexelSize * float2(1, 1) * _SampleDistance;
+            //
+            //     return o;
+            // }
 
-            VertexOutput vert(VertexInput i)
+            float4 frag(Varyings i) : SV_TARGET
             {
-                VertexOutput o;
+                float2 uvs[9];
+                uvs[0] = i.texcoord + _SrcTex_TexelSize * float2(-1, -1) * _SampleDistance;
+                uvs[1] = i.texcoord + _SrcTex_TexelSize * float2(0, -1) * _SampleDistance;
+                uvs[2] = i.texcoord + _SrcTex_TexelSize * float2(1, -1) * _SampleDistance;
+                uvs[3] = i.texcoord + _SrcTex_TexelSize * float2(-1, 0) * _SampleDistance;
+                uvs[4] = i.texcoord + _SrcTex_TexelSize * float2(0, 0) * _SampleDistance;
+                uvs[5] = i.texcoord + _SrcTex_TexelSize * float2(1, 0) * _SampleDistance;
+                uvs[6] = i.texcoord + _SrcTex_TexelSize * float2(-1, 1) * _SampleDistance;
+                uvs[7] = i.texcoord + _SrcTex_TexelSize * float2(0, 1) * _SampleDistance;
+                uvs[8] = i.texcoord + _SrcTex_TexelSize * float2(1, 1) * _SampleDistance;
 
-                o.position = TransformObjectToHClip(i.position.xyz);
-
-                o.uv[0] = i.uv + _MainTex_TexelSize * float2(-1, -1) * _SampleDistance;
-                o.uv[1] = i.uv + _MainTex_TexelSize * float2(0, -1) * _SampleDistance;
-                o.uv[2] = i.uv + _MainTex_TexelSize * float2(1, -1) * _SampleDistance;
-                o.uv[3] = i.uv + _MainTex_TexelSize * float2(-1, 0) * _SampleDistance;
-                o.uv[4] = i.uv + _MainTex_TexelSize * float2(0, 0) * _SampleDistance;
-                o.uv[5] = i.uv + _MainTex_TexelSize * float2(1, 0) * _SampleDistance;
-                o.uv[6] = i.uv + _MainTex_TexelSize * float2(-1, 1) * _SampleDistance;
-                o.uv[7] = i.uv + _MainTex_TexelSize * float2(0, 1) * _SampleDistance;
-                o.uv[8] = i.uv + _MainTex_TexelSize * float2(1, 1) * _SampleDistance;
-
-                return o;
-            }
-
-            float4 frag(VertexOutput i) : SV_TARGET
-            {
                 const float Gx[9] = {
                     -1, 0, 1,
                     -2, 0, 2,
@@ -174,9 +184,8 @@ Shader "Custom/SSOutlineShader"
 
                 float edgeX = 0;
                 float edgeY = 0;
-                for (int it = 0; it < 9; it++)
-                {
-                    float col = SAMPLE_DEPTH_TEXTURE(_MainTex, sampler_MainTex, i.uv[it]);
+                for (int it = 0; it < 9; it++) {
+                    float col = SAMPLE_DEPTH_TEXTURE(_SrcTex, sampler_SrcTex, uvs[it]);
                     edgeX += col * Gx[it];
                     edgeY += col * Gy[it];
                 }
@@ -193,41 +202,82 @@ Shader "Custom/SSOutlineShader"
             //Pass3
             Name "Merge Outline Into Camera"
 
+//            Blend SrcAlpha OneMinusSrcAlpha
+            
             HLSLPROGRAM
-            #pragma vertex vert
-            #pragma fragment frag
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+#include "Packages/com.unity.render-pipelines.core/Runtime/Utilities/Blit.hlsl"
+#pragma vertex Vert
+#pragma fragment frag
 
-            struct VertexInput
-            {
-                float4 position : POSITION;
-                float2 uv : TEXCOORD0;
-            };
+            // struct VertexInput {
+            //     float4 position : POSITION;
+            //     float2 uv : TEXCOORD0;
+            // };
 
-            struct VertexOutput
-            {
-                float4 position : SV_POSITION;
-                float2 uv : TEXCOORD0;
-            };
+            // struct VertexOutput {
+            //     float4 position : SV_POSITION;
+            //     float2 uv : TEXCOORD0;
+            // };
 
-            TEXTURE2D(_MainTex);
-            SAMPLER(sampler_MainTex);
+            TEXTURE2D(_SrcTex);
+            SAMPLER(sampler_SrcTex);
 
             TEXTURE2D(_Edge);
             SAMPLER(sampler_Edge);
 
+            // VertexOutput vert(VertexInput i)
+            // {
+            //     VertexOutput o;
+            //     o.position = TransformObjectToHClip(i.position.xyz);
+            //     o.uv = i.uv;
+            //     return o;
+            // }
+
+            float4 frag(Varyings i) : SV_TARGET
+            {
+                float4 cameraColor = SAMPLE_TEXTURE2D(_SrcTex, sampler_SrcTex, i.texcoord);
+                float4 outlineColor = SAMPLE_TEXTURE2D(_Edge, sampler_Edge, i.texcoord);
+                // return float4(outlineColor.a, outlineColor.a, outlineColor.a, 1);
+                return float4(lerp(cameraColor.rgb, outlineColor.rgb, outlineColor.a), 1);
+            }
+            ENDHLSL
+        }
+
+Pass
+        {
+            //Pass4
+            Name "TEST DRAW BLUE ONLY"
+
+            ZTest GEqual
+            ZWrite Off
+
+            HLSLPROGRAM
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+#pragma vertex vert
+#pragma fragment frag
+
+            // TEXTURE2D(_MainTex);
+            // SAMPLER(sampler_MainTex);
+
+            struct VertexInput {
+                float4 positionOS : POSITION;
+            };
+
+            struct VertexOutput {
+                float4 positionCS : SV_POSITION;
+            };
+
             VertexOutput vert(VertexInput i)
             {
                 VertexOutput o;
-                o.position = TransformObjectToHClip(i.position.xyz);
-                o.uv = i.uv;
+                o.positionCS = TransformObjectToHClip(i.positionOS.xyz);
                 return o;
             }
 
             float4 frag(VertexOutput i) : SV_TARGET
             {
-                float4 cameraColor = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.uv);
-                float4 outlineColor = SAMPLE_TEXTURE2D(_Edge, sampler_Edge, i.uv);
-                return float4(lerp(cameraColor.rgb, outlineColor.rgb, outlineColor.a), 1);
+                return float4(0, 0, 1, 1);
             }
             ENDHLSL
         }

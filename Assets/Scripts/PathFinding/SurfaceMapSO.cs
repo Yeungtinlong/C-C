@@ -5,8 +5,6 @@ namespace CNC.PathFinding
     [CreateAssetMenu(fileName = "SurfaceMapSO", menuName = "Path Finding/SurfaceMapSO")]
     public class SurfaceMapSO : ScriptableObject
     {
-        [SerializeField] private BlockMapSO _blockMapSO = default;
-
         private int _surfaceMapWidth;
         private int _surfaceMapSize;
         private float _surfaceMapScale;
@@ -21,7 +19,7 @@ namespace CNC.PathFinding
 
         private void InitBlockMap()
         {
-            _blockMapSO.Initialize(_surfaceMapWidth / _surfaceMapScale, _surfaceMapWidth / _surfaceMapScale, 1f / _surfaceMapScale);
+            BlockMapManager.Singleton.Initialize(_surfaceMapWidth / _surfaceMapScale, _surfaceMapWidth / _surfaceMapScale, 1f / _surfaceMapScale);
         }
     }
 }

@@ -1,8 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro.Examples;
-using UnityEngine;
-
 public class PlayerInfo : Singleton<PlayerInfo>
 {
     private FactionType _factionType;

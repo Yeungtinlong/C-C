@@ -1,6 +1,6 @@
 namespace CNC.PathFinding
 {
-    internal enum ArrivalState
+    public enum ArrivalState
     {
         FreeMoving,
         Arrive,

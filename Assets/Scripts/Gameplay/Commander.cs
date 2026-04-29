@@ -12,7 +12,6 @@ public class Commander : MonoBehaviour
 {
     [SerializeField] private FactionType _faction = default;
     [SerializeField] private InputReader _inputReader = default;
-    [SerializeField] private BlockMapSO _blockMapSO = default;
 
     [Header("Boardcasting on")] [SerializeField]
     private ChangeOutlineColorChannelSO _changeOutlineColorChannelSO = default;
@@ -404,7 +403,7 @@ public class Commander : MonoBehaviour
         if (isAdditional && _tempPlatoon != null)
             _tempPlatoon.AddUnitIntoPlatoon(unit);
         else
-            _tempPlatoon = new Platoon(unit, _blockMapSO);
+            _tempPlatoon = new Platoon(unit, BlockMapManager.Singleton);
 
         Select(unit);
     }
@@ -417,7 +416,7 @@ public class Commander : MonoBehaviour
         if (isAdditional && _tempPlatoon != null)
             _tempPlatoon.AddUnitIntoPlatoon(units);
         else
-            _tempPlatoon = new Platoon(units, _blockMapSO);
+            _tempPlatoon = new Platoon(units, BlockMapManager.Singleton);
 
         foreach (Controllable unit in units)
             if (!_selectedUnits.Contains(unit))

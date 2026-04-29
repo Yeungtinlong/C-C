@@ -49,7 +49,7 @@ namespace CNC.PathFinding.Proximity
             if (!IsGridIndexValid(index))
                 return;
             
-            UnitGridRecord record = new UnitGridRecord { RecordType = RecordType.IPathDriver, PathDriver = unit };
+            UnitGridRecord record = new UnitGridRecord { RecordType = RecordType.PathDriver, PathDriver = unit };
             _proximityGrids[index].Add(record);
         }
 
@@ -59,7 +59,7 @@ namespace CNC.PathFinding.Proximity
                 return;
             
             _proximityGrids[index]
-                .Remove(new UnitGridRecord { RecordType = RecordType.IPathDriver, PathDriver = unit });
+                .Remove(new UnitGridRecord { RecordType = RecordType.PathDriver, PathDriver = unit });
         }
 
         public bool TryGetGridIndexFromTransformPosition(Vector3 transformPosition, out int gridIndex)
@@ -117,18 +117,6 @@ namespace CNC.PathFinding.Proximity
             }
 
             return proximityUnits;
-        }
-
-        public struct UnitGridRecord
-        {
-            public RecordType RecordType { get; set; }
-            public IPathDriver PathDriver { get; set; }
-        }
-
-        public enum RecordType
-        {
-            IPathDriver,
-            PatrolPoint // 巡逻点，暂时无用
         }
     }
 }

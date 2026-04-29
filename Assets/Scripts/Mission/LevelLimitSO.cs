@@ -8,7 +8,7 @@ public class LevelLimitSO : ScriptableObject
 {
     [SerializeField] private LevelRectSO[] _levelRects = default;
     [SerializeField] private VisibilitySystemSO _visibilitySystem = default;
-    [SerializeField] private BlockMapSO _blockMap = default;
+    [SerializeField] private BlockMapManagerInternal _blockMap = default;
 
     private int _currentIndex;
 

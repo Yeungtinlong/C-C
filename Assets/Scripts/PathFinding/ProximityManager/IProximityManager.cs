@@ -3,6 +3,18 @@ using UnityEngine;
 
 namespace CNC.PathFinding.Proximity
 {
+    public struct UnitGridRecord
+    {
+        public RecordType RecordType { get; set; }
+        public IPathDriver PathDriver { get; set; }
+    }
+
+    public enum RecordType
+    {
+        PathDriver,
+        PatrolPoint // 巡逻点，暂时无用
+    }
+    
     public interface IProximityManager
     {
         public void Initialize(int mapWidth);

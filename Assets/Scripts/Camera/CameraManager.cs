@@ -49,7 +49,7 @@ public class CameraManager : MonoBehaviour
     {
 #if UNITY_EDITOR
         // Disable the moving camera by mouse in editor mode, is easier to debugging.
-        _canMouseMoveCamera = true;
+        _canMouseMoveCamera = false;
 #endif
         _inputReader.zoomCameraEvent += OnZoomCamera;
         _inputReader.rotateCameraEvent += OnRotateCamera;

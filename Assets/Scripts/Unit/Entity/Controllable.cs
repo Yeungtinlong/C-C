@@ -130,7 +130,6 @@ public class Controllable : MonoBehaviour
         foreach (GameObject outlineObject in _outlineObjects)
         {
             outlineObject.layer = isShowOutline ? _outlineLayer : _defaultLayer;
-            ;
         }
     }
 

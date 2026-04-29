@@ -1,16 +1,17 @@
 using CNC.Utility;
 using System.Collections.Generic;
+using CNC.PathFinding.UnitGrid;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace CNC.PathFinding
 {
     [RequireComponent(typeof(Damageable), typeof(Controllable))]
-    public partial class PathDriver : PathDriverBase
+    public partial class PathDriver : GroundDriver
     {
         private Vector3 _lastTargetAlignment;
         
-        private BlockMapSO.BlockFlag _lastTargetBlockOverride;
+        private BlockFlag _lastTargetBlockOverride;
 
         private Vector2[] _globalRoute;
         private bool _isGlobalRouteValid;
@@ -102,7 +103,7 @@ namespace CNC.PathFinding
                     Vector3 point = new Vector3(_globalRoute[i].x, 10f, _globalRoute[i].y);
                     Gizmos.color = Color.yellow;
                     Gizmos.DrawCube(point,
-                        new Vector3(_blockMapSO.ToWorldScale * 0.95f, 0.5f, _blockMapSO.ToWorldScale * 0.95f));
+                        new Vector3(BlockMapManager.Singleton.ToWorldScale * 0.95f, 0.5f, BlockMapManager.Singleton.ToWorldScale * 0.95f));
                 }
             }
 
@@ -113,7 +114,7 @@ namespace CNC.PathFinding
                     Vector3 point = new Vector3(_localRoute[i].x, 10f, _localRoute[i].y);
                     Gizmos.color = Color.blue;
                     Gizmos.DrawCube(point,
-                        new Vector3(_blockMapSO.ToWorldScale * 0.9f, 0.75f, _blockMapSO.ToWorldScale * 0.9f));
+                        new Vector3(BlockMapManager.Singleton.ToWorldScale * 0.9f, 0.75f, BlockMapManager.Singleton.ToWorldScale * 0.9f));
                 }
             }
         }
@@ -230,14 +231,14 @@ namespace CNC.PathFinding
 
         protected override void PreUpdateMovement()
         {
-            Vector2 worldPosition = _blockMapSO.SnapToBlock(PathDriverUtils.TransformToWorldPoint(Transform.position),
+            Vector2 worldPosition = BlockMapManager.Singleton.SnapToBlock(PathDriverUtils.TransformToWorldPoint(Transform.position),
                 Controllable.UnitSizeInWorld);
             float collisionRadius = SizeToCollisionRadius(Controllable.UnitSizeInWorld);
             float maxCollisionRadius = collisionRadius + SizeToCollisionRadius(MAXIMUM_UNIT_SIZE);
 
             if (_isStaying)
             {
-                List<IPathDriver> unitsInAround = _unitGridSO.GetUnitsInAround(worldPosition, maxCollisionRadius);
+                List<IPathDriver> unitsInAround = UnitGridManager.Singleton.GetUnitsInAround(worldPosition, maxCollisionRadius);
 
                 foreach (IPathDriver driver in unitsInAround)
                 {
@@ -262,7 +263,7 @@ namespace CNC.PathFinding
         private float SizeToCollisionRadius(float unitSizeInWorld)
         {
             return (unitSizeInWorld > 1f)
-                ? (unitSizeInWorld * 0.5f - (0.5f * _blockMapSO.ToWorldScale * 1.4142f))
+                ? (unitSizeInWorld * 0.5f - (0.5f * BlockMapManager.Singleton.ToWorldScale * 1.4142f))
                 : 0.5f;
         }
 
@@ -274,7 +275,7 @@ namespace CNC.PathFinding
             }
 
             Vector2 otherWorldBlockPoint =
-                _blockMapSO.SnapToBlock(PathDriverUtils.TransformToWorldPoint(otherDriver.Transform.position),
+                BlockMapManager.Singleton.SnapToBlock(PathDriverUtils.TransformToWorldPoint(otherDriver.Transform.position),
                     otherDriver.UnitSize);
             float sqrDistance = Utils.SqrDistance(otherWorldBlockPoint, worldPoint);
             float otherCollisionRadius = SizeToCollisionRadius(otherDriver.UnitSize);
@@ -995,7 +996,7 @@ namespace CNC.PathFinding
                 //Debug.Log(this + " mark " + _lastCollision.TargetDriver);
                 markPoint = _lastCollision.TargetPosition;
                 unitSizeInWorld = _lastCollision.TargetDriver.UnitSize;
-                _blockMapSO.MarkBlockMap(markPoint, unitSizeInWorld, BlockMapSO.BlockFlag.Dynamic);
+                BlockMapManager.Singleton.MarkBlockMap(markPoint, unitSizeInWorld, BlockFlag.Dynamic);
             }
 
             _isUsingRemainingManeuvers = _isUsingRemainingManeuvers || _maneuvers.Count > 0;
@@ -1014,7 +1015,7 @@ namespace CNC.PathFinding
                 UnmarkUnitFromBlockMap(_markedUnits[i]);
 
             if (isRequiredMarkLastCollisionUnit)
-                _blockMapSO.UnmarkBlockMap(markPoint, unitSizeInWorld, BlockMapSO.BlockFlag.Dynamic);
+                BlockMapManager.Singleton.UnmarkBlockMap(markPoint, unitSizeInWorld, BlockFlag.Dynamic);
 
             return true;
         }
@@ -1157,14 +1158,14 @@ namespace CNC.PathFinding
 
         private void MarkUnitToBlockMap(IPathDriver unit)
         {
-            _blockMapSO.MarkBlockMap(PathDriverUtils.TransformToWorldPoint(unit.Transform.position), unit.UnitSize,
-                BlockMapSO.BlockFlag.Dynamic);
+            BlockMapManager.Singleton.MarkBlockMap(PathDriverUtils.TransformToWorldPoint(unit.Transform.position), unit.UnitSize,
+                BlockFlag.Dynamic);
         }
 
         private void UnmarkUnitFromBlockMap(IPathDriver unit)
         {
-            _blockMapSO.UnmarkBlockMap(PathDriverUtils.TransformToWorldPoint(unit.Transform.position), unit.UnitSize,
-                BlockMapSO.BlockFlag.Dynamic);
+            BlockMapManager.Singleton.UnmarkBlockMap(PathDriverUtils.TransformToWorldPoint(unit.Transform.position), unit.UnitSize,
+                BlockFlag.Dynamic);
         }
 
         private bool IsIgnoreEvasionType(IPathDriver other)
@@ -1629,9 +1630,9 @@ namespace CNC.PathFinding
             }
         }
 
-        private bool IsPositionRestricted(Vector2 worldPoint, BlockMapSO.BlockFlag blockFlag)
+        private bool IsPositionRestricted(Vector2 worldPoint, BlockFlag blockFlag)
         {
-            return _blockMapSO.IsBlockRestricted(worldPoint, Controllable.UnitSizeInWorld, blockFlag);
+            return BlockMapManager.Singleton.IsBlockRestricted(worldPoint, Controllable.UnitSizeInWorld, blockFlag);
         }
 
         private bool DetectCollisions(DriverProxy proxy, int frameID, int maneuverIndex, bool isPredictive,
@@ -1657,14 +1658,14 @@ namespace CNC.PathFinding
                 return true;
             }
 
-            Vector2 gridPosition = _blockMapSO.SnapToBlock(proxy.Position, Controllable.UnitSizeInWorld);
+            Vector2 gridPosition = BlockMapManager.Singleton.SnapToBlock(proxy.Position, Controllable.UnitSizeInWorld);
             float collisionRadius = SizeToCollisionRadius(Controllable.UnitSizeInWorld);
             float detectionRadius = collisionRadius + SizeToCollisionRadius(MAXIMUM_UNIT_SIZE);
 
             if (isPredictive)
                 detectionRadius += MAXIMUN_GROUND_UNIT_DISTANCE;
 
-            List<IPathDriver> unitsInAround = _unitGridSO.GetUnitsInAround(gridPosition, detectionRadius);
+            List<IPathDriver> unitsInAround = UnitGridManager.Singleton.GetUnitsInAround(gridPosition, detectionRadius);
 
             for (int i = 0; i < unitsInAround.Count; i++)
             {
@@ -1731,7 +1732,7 @@ namespace CNC.PathFinding
         private bool PreFilterCollision(Vector2 gridPosition, float collisionRadius, Vector2 otherPosition,
             IPathDriver other)
         {
-            Vector2 otherGridPosition = _blockMapSO.SnapToBlock(otherPosition, other.UnitSize);
+            Vector2 otherGridPosition = BlockMapManager.Singleton.SnapToBlock(otherPosition, other.UnitSize);
             float otherCollisionRadius = SizeToCollisionRadius(other.UnitSize);
 
             return Utils.SqrDistance(gridPosition, otherGridPosition) >=
@@ -1817,7 +1818,7 @@ namespace CNC.PathFinding
                 _lastTargetPoint = targetPoint;
                 _lastTargetAlignment = targetAlignment;
                 _lastTargetApproachRange = approachRange;
-                _lastTargetBlockOverride = BlockMapSO.BlockFlag.Dynamic | BlockMapSO.BlockFlag.RestrictVehicle;
+                _lastTargetBlockOverride = BlockFlag.Dynamic | BlockFlag.RestrictVehicle;
 
                 PathGenerator.RequestPath(Transform.position, new Vector3(targetPoint.x, 0f, targetPoint.z), -1);
                 GenerateGlobalRoute(PathGenerator.CurrentPath, _lastTargetApproachRange);

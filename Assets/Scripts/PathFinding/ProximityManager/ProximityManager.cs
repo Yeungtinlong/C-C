@@ -1,6 +1,6 @@
 namespace CNC.PathFinding.Proximity
 {
-    public class ProximityManager
+    public static class ProximityManager
     {
         private static IProximityManager _singleton;
         
